@@ -219,7 +219,7 @@ hr {
       width: 30px;
       height: 30px;
       position: relative;
-      border: 1px solid #969696;
+      border: 1px solid $secondary;
       -webkit-border-radius: 50%;
       border-radius: 50%;
       -webkit-transition: color 0.3s ease;
@@ -235,7 +235,7 @@ hr {
       transform: translate(-50%, -50%);
       font-size: 1.125rem;
       line-height: normal;
-      color: #969696;
+      color: $secondary;
       -webkit-transition: color 0.3s ease;
       -o-transition: color 0.3s ease;
       transition: color 0.3s ease;
@@ -563,7 +563,7 @@ footer {
   .fab {
     padding-left: 10px;
     font-size: 25px;
-    color: #969696;
+    color: $secondary;
     -webkit-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
@@ -598,7 +598,7 @@ footer {
     height: 30px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #969696;
+    background: $secondary;
     -webkit-transform-origin: 100% 50%;
     -ms-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
