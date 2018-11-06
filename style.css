@@ -54,7 +54,7 @@ a {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   &:hover {
-    color: #F5A623;
+    color: $primary;
     text-decoration: none;
   }
 }
@@ -240,8 +240,8 @@ hr {
     }
     &:hover {
       div {
-        border: 1px solid #F5A623;
-        background: #F5A623;
+        border: 1px solid $primary;
+        background: $primary;
       }
       .fab {
         color: #FFF;
@@ -297,7 +297,7 @@ hr {
         font-family: Avenir-Book;
         text-transform: uppercase;
         &:hover {
-          color: #F5A623;
+          color: $primary;
           text-decoration: underline;
         }
       }
@@ -364,7 +364,7 @@ footer {
       width: calc(100% - 200px);
       border: 0px solid #CCC;
       border-radius: 0 4px 4px 0;
-      background: #F5A623;
+      background: $primary;
       font-size: 0.875rem;
       color: $text;
       &:hover {
@@ -399,7 +399,7 @@ footer {
 
 .footer_privacy {
   padding: 15px 0;
-  background: #F5A623;
+  background: $primary;
   color: $text;
   .col-md-6:last-child .footer_text {
     text-align: right;
@@ -469,7 +469,7 @@ footer {
       }
     }
     .slick-active button {
-      background-color: #F5A623;
+      background-color: $primary;
     }
   }
 }
@@ -558,7 +558,7 @@ footer {
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
     &:hover {
-      color: #F5A623;
+      color: $primary;
       cursor: pointer;
     }
   }
@@ -572,7 +572,7 @@ footer {
   overflow: hidden;
   z-index: 1;
   border: none;
-  background: #F5A623;
+  background: $primary;
   font-family: Avenir-Medium;
   font-size: 1.125rem;
   color: $text;
@@ -615,7 +615,7 @@ footer {
 .inside_page_header {
   margin-bottom: 20px;
   padding: 8px 20px;
-  background: #F5A623;
+  background: $primary;
   font-family: Georgia-Italic;
   font-size: 1.375rem;
   color: $text;
@@ -627,7 +627,7 @@ footer {
   font-style: italic;
   font-size: 1.375rem;
   line-height: 1.375rem;
-  color: #F5A623;
+  color: $primary;
 }
 
 .inside_page_toggle {
@@ -640,7 +640,7 @@ footer {
     padding: 4px 20px;
     height: 38px;
     border-radius: 0;
-    background: #F5A623;
+    background: $primary;
     font-family: Georgia-Italic;
     font-size: 1.375rem;
     line-height: normal;
@@ -703,7 +703,7 @@ footer {
 .mapplic-popup-link {
   padding: 6px 6px 3px 6px;
   float: left !important;
-  background-color: #F5A623;
+  background-color: $primary;
   font-size: 1rem;
   line-height: 1rem;
   color: $text !important;
@@ -724,7 +724,7 @@ footer {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 8px 20px;
-    background: #F5A623;
+    background: $primary;
     font-family: Georgia-Italic;
     font-size: 1.375rem;
     color: #FFF;
@@ -746,7 +746,7 @@ footer {
   font-family: Georgia-Italic;
   font-size: 1.375rem;
   line-height: 1.375rem;
-  color: #F5A623;
+  color: $primary;
 }
 
 .promo_store_name {
@@ -805,11 +805,11 @@ footer {
       bottom: -21px;
     }
     &:hover::after {
-      background: #F5A623;
+      background: $primary;
     }
   }
   .active_store_nav::after {
-    background: #F5A623;
+    background: $primary;
   }
 }
 
@@ -845,7 +845,7 @@ footer {
       white-space: initial;
     }
     > .highlight > a {
-      background: #F5A623;
+      background: $primary;
     }
   }
 }
@@ -879,7 +879,7 @@ footer {
 .store_initial_container {
   margin: 20px 0;
   padding: 10px 20px;
-  background: #F5A623;
+  background: $primary;
   font-size: 1.375rem;
   text-transform: uppercase;
   color: #FFF;
@@ -951,7 +951,7 @@ footer {
   line-height: 1.875rem;
   .today {
     font-family: Avenir-Medium;
-    color: #F5A623;
+    color: $primary;
   }
   .hours_list_day {
     padding-right: 50px;
@@ -1018,7 +1018,7 @@ footer {
       position: absolute;
       height: 4px;
       width: 100%;
-      background: #F5A623;
+      background: $primary;
       border-radius: 9px;
       opacity: 1;
       -webkit-transform: rotate(0deg);
@@ -1128,7 +1128,7 @@ footer {
           border: 1px solid #000;
         }
         .fab {
-          color: #F5A623;
+          color: $primary;
         }
       }
     }
