@@ -117,6 +117,7 @@
 <script>
     define(["Vue", "vuex", "vue-select", "vue!mapplic-png-map"], function(Vue, Vuex, VueSelect, MapplicComponent) {
         Vue.component('v-select', VueSelect.VueSelect);
+        console.log("insideHeaderComponent", insideHeaderComponent)
         return Vue.component("stores-component", {
             template: template, // the variable template will be injected
             data: function() {
