@@ -83,6 +83,7 @@
                 }
             },
             created() {
+                console.log("Site", Site)
                 this.loadData().then(response => {
                     // this.currentPage = response[0].data;
                     this.dataLoaded = true;
