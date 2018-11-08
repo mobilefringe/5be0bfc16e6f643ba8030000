@@ -45,7 +45,7 @@ require.config({
 });
 
 require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-sync', 'datastore', 'vue-i18n', 'locales', 'moment', 'vue-meta', 'vue!loading.vue', 'vue!messages.vue', 'vue!header.vue', 'vue!footer.vue', 'vue!inside_header.vue'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, VuexRouterSync, store, VueI18n, messages, moment, Meta, LoadingComponent, MessagesComponent, HeaderComponent, FooterComponent, insideHeaderComponent) {
-
+console.log("insideHeaderComponent", insideHeaderComponent)
     Vue.use(Meta);
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
