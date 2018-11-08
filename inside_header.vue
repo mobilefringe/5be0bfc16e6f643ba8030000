@@ -15,8 +15,7 @@
             props: ['pageName'],
             data: function data() {
                 return {
-                    dataLoaded: false,
-                    pageName: null
+                    dataLoaded: false
                 }
             },
             created() {
