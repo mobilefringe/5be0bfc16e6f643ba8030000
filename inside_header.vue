@@ -16,7 +16,7 @@
             data: function data() {
                 return {
                     dataLoaded: false,
-                    currentPage: null
+                    pageName: null
                 }
             },
             created() {
