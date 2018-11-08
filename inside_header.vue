@@ -12,7 +12,7 @@
     define(["Vue", "vuex"], function (Vue, Vuex) {
         return Vue.component("page-details-component", {
             template: template, // the variable template will be injected,
-            props: ['id'],
+            props: ['pageName'],
             data: function data() {
                 return {
                     dataLoaded: false,
@@ -21,6 +21,7 @@
             },
             created() {
                 this.updateCurrentPage(this.id);
+                
             },
             watch: {
                 $route: function () {
