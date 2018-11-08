@@ -18,32 +18,6 @@
                     dataLoaded: false
                 }
             },
-            created() {
-                this.updateCurrentPage(this.id);
-                
-            },
-            watch: {
-                $route: function () {
-                    this.updateCurrentPage(this.$route.params.id);
-                }
-            },
-            computed: {
-                ...Vuex.mapGetters([
-                    'property'
-                ])
-            },
-            methods: {
-                updateCurrentPage(id) {
-                    var _this = this;
-                    this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + this.id + ".json" }).then(function (response) {
-                        _this.currentPage = response.data;
-                        _this.dataLoaded = true;
-                    }, function (error) {
-                        console.error( "Could not retrieve data from server. Please check internet connection and try again.");
-                        _this.$router.replace({ name: '404' });
-                    });
-                }
-            }
         });
     });
 </script>
