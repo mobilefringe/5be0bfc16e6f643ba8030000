@@ -1,5 +1,11 @@
 <template>
-    
+    <div class="inside_header_background">
+        <div class="main_container">
+            <div class="page_container">
+                <h2>Directory</h2>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
