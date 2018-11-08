@@ -10,7 +10,7 @@
 
 <script>
     define(["Vue", "vuex"], function (Vue, Vuex) {
-        return Vue.component("page-details-component", {
+        return Vue.component("inside-header-component", {
             template: template, // the variable template will be injected,
             props: ['pageName']
         });
