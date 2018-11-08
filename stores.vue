@@ -3,7 +3,7 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <inside-header></inside-header>
+                <!--<inside-header></inside-header>-->
                 <div class="main_container margin_30">
                     <div class="hidden_phone">
                         <div class="row store_nav">
