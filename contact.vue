@@ -97,6 +97,7 @@
                 loadData: async function () {
                     try {
                         let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/milton-contact-us.json"})]);
+                        console.log("Site", Site)
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
