@@ -1,26 +1,5 @@
 <template>
-    <div> <!-- without an outer container div this component template will not render -->
-        <loading-spinner v-if="!dataLoaded"></loading-spinner>
-        <transition name="fade">
-            <div v-if="dataLoaded" v-cloak>
-                <div class="inside_header_background">
-                    <div class="main_container">
-                        <h2 v-html="currentPage.title"></h2>
-                    </div>
-                </div>
-                <div class="main_container mobile_padding margin_30">
-                    <div class="details_row">
-                        <div class="details_col_3 hidden_phone">
-                            <img class="img_max" src="http://placehold.it/440x1200" alt="" />    
-                        </div>
-                        <div class="details_col_9">
-                            <div class="page_body" v-html="currentPage.body"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </transition>
-    </div>
+    
 </template>
 
 <script>
