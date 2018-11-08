@@ -13,6 +13,11 @@
         return Vue.component("inside-header-component", {
             template: template, // the variable template will be injected,
             props: ['pageName'],
+            data: function() {
+                return {
+                    pageBanner : null
+                }
+            },
             created (){
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Map Banner');
