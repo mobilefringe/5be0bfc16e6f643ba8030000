@@ -3,11 +3,6 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <div class="inside_header_background">
-                    <div class="main_container">
-                        <h2>Events</h2>
-                    </div>
-                </div>
                 <inside-header-component pageName="Promotions"></inside-header-component>
                 <div class="main_container margin_30">
                     <div class="details_row">
