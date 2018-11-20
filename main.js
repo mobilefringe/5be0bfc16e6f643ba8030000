@@ -83,7 +83,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
             return {
                 menu_items: [
                     {
-                        name: "Directory",
+                        name: "Store Directory",
                         href: "/stores"
                     },
                     {
