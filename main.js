@@ -91,43 +91,17 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         href: "/sales-and-events"
                     },
                     {
-                        name: "About",
-                        id: "menu1",
-                        href: "",
-                        sub_menu: [
-                            {
-                                name: "Services",
-                                href: "/pages/"
-                            },
-                            {
-                                name: "Newsletter",
-                                href: "/newsletter"
-                            }
-                        ]
+                        name: "Sales & Events",
+                        href: "/sales-and-events"
                     },
                     {
-                        name: "Contact",
-                        id: "menu2",
-                        href: "",
-                        sub_menu: [
-                            {
-                                name: "Jobs",
-                                href: "/jobs"
-                            },
-                            {
-                                name: "Location",
-                                href: "/location"
-                            },
-                            {
-                                name: "Management",
-                                href: "/pages/"
-                            },
-                            {
-                                name: "Leasing",
-                                href: "/pages/"
-                            }
-                        ]
-                    }
+                        name: "Sales & Events",
+                        href: "/sales-and-events"
+                    },
+                    {
+                        name: "Sales & Events",
+                        href: "/sales-and-events"
+                    },
                 ],
                 social_media: [
                     {
