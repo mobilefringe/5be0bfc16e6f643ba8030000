@@ -3,7 +3,7 @@
         <section class="footer_menu main_container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 footer_hours">
-                    <router-link to="/hours"><p class="footer_heading">VIEW ALL HOURS</p></router-link>
+                    <router-link to="/hours" class="footer_heading">VIEW ALL HOURS</router-link>
                     <img src="//codecloud.cdn.speedyrails.net/sites/5af1d01b6e6f64457d110000/image/png/1525870162000/clock.png" class="clock_icon" alt="">
                     <div class="footer_hours_container">
                         <p>
