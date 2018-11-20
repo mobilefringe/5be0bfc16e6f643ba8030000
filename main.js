@@ -90,10 +90,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         name: "Sales & Events",
                         href: "/sales-and-events"
                     },
-                    {
-                        name: "Movies",
-                        href: "/pages/coralridge-movies"
-                    },
+                    // {
+                    //     name: "Movies",
+                    //     href: "/pages/coralridge-movies"
+                    // },
                     {
                         name: "Tourist Info",
                         href: "/pages/coralridge-tourist-info"
@@ -106,10 +106,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         name: "Contact",
                         href: "/contact-us"
                     },
-                    {
-                        name: "Hours",
-                        href: "/directions"
-                    },
+                    // {
+                    //     name: "Hours",
+                    //     href: "/hours"
+                    // },
                 ],
                 social_media: [
                     {
