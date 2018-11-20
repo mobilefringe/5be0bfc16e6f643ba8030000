@@ -106,6 +106,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         name: "Contact",
                         href: "/contact-us"
                     },
+                    {
+                        name: "Hours",
+                        href: "/directions"
+                    },
                 ],
                 social_media: [
                     {
