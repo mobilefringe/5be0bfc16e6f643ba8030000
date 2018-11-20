@@ -100,7 +100,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                     },
                     {
                         name: "Map & Directions",
-                        href: "/sales-and-events"
+                        href: "/directions"
                     },
                 ],
                 social_media: [
