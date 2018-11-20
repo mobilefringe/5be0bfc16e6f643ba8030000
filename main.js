@@ -91,7 +91,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         href: "/sales-and-events"
                     },
                     {
-                        name: "Sales & Events",
+                        name: "Movies",
                         href: "/sales-and-events"
                     },
                     {
