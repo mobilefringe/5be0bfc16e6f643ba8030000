@@ -41,7 +41,7 @@ require.config({
         'hammer' : 'https://codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min',
         'mapplic-png-map' : 'https://mmvue.codecloudapp.com/mapplic_png.vue?noext',
         'loader': 'https://mmvue.codecloudapp.com/loader.vue?noext',
-        'lozad' :  'https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js'
+        'lozad' :  'https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min'
     }
 });
 
