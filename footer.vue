@@ -32,6 +32,7 @@
                     <!--<label for="emailAddress" class="accessibility">Enter Email Address</label>-->
                     <!--<input id="emailAddress" v-model="newsletter_email" type="text" placeholder="Susbcribe to Newsletter" class="newsletter_control" required />-->
                     <!--<button @click="newsletterRoute" class="newsletter_btn animated_btn">Subscribe</button>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14323.413167623861!2d-80.115766!3d26.168907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c0885e20640af28!2sCoral+Ridge+Mall!5e0!3m2!1sen!2sca!4v1542751756955" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 footer_insta">
                     <a class="pull-right insta_view_more" :href="siteInfo.instagramURL" target="_blank">View More <i class="fa fa-caret-right"></i></a>
