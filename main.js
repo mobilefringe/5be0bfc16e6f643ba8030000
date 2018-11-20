@@ -96,7 +96,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                     },
                     {
                         name: "Sales & Events",
-                        href: "/sales-and-events"
+                         href: "/pages/coralridge-tourist-info"
                     },
                     {
                         name: "Sales & Events",
