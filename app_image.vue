@@ -8,10 +8,8 @@
 </template>
 
 <script>
-import lozad from 'lozad';
-
-export default {
-  name: 'AppImage',
+define(["Vue", "vuex", "json!site.json"], function(Vue, Vuex, site) {
+		return Vue.component("AppImage", {
   props: {
     backgroundColor: {
       type: String,
