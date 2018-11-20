@@ -92,7 +92,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                     },
                     {
                         name: "Movies",
-                        href: "/sales-and-events"
+                        href: "/pages/coralridge-movies"
                     },
                     {
                         name: "Sales & Events",
