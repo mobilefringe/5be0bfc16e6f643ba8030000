@@ -86,7 +86,7 @@
                 console.log("Site", Site)
                 this.loadData().then(response => {
                     // this.currentPage = response[0].data;
-                    var temp_repo1 = this.findRepoByName('Sales & Events Side Banner');
+                    var temp_repo1 = this.findRepoByName('Contact Side Banner');
                         if(temp_repo1 && temp_repo1.images) {
                             this.sideBanner = temp_repo1.images[0];
                         } else {
