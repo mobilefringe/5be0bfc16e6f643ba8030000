@@ -56,9 +56,9 @@
                     siteInfo: site
                 }
             },
-            created() {
-				this.$store.dispatch("getData", "promotions").then(response => {
-					this.currentPromo = this.findPromoBySlug(this.id);
+            created (){
+                this.loadData().then(response => {
+                    this.currentPromo = this.findPromoBySlug(this.id);
 					if (this.currentPromo === null || this.currentPromo === undefined) {
 						this.$router.replace({ path: '/promotions' });
 					}
@@ -70,11 +70,9 @@
                             "image_url": ""
                         }
                     } 
-					this.dataLoaded = true;
-				}, error => {
-					console.error("Could not retrieve data from server. Please check internet connection and try again.");
-				});
-			},
+                    this.dataLoaded = true;
+                });
+            },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
