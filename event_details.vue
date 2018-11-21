@@ -58,17 +58,35 @@
 				    siteInfo: site,
 				}
 			},
-			created() {
-				this.$store.dispatch("getData", "events").then(response => {
-					this.currentEvent = this.findEventBySlug(this.id);
-					if (this.currentEvent === null || this.currentEvent === undefined) {
-						this.$router.replace({ name: '404' });
+// 			created() {
+// 				this.$store.dispatch("getData", "events").then(response => {
+// 					this.currentEvent = this.findEventBySlug(this.id);
+// 					if (this.currentEvent === null || this.currentEvent === undefined) {
+// 						this.$router.replace({ name: '404' });
+// 					}
+// 					this.dataLoaded = true;
+// 				}, error => {
+// 					console.error("Could not retrieve data from server. Please check internet connection and try again.");
+// 				});
+// 			},
+created (){
+                this.loadData().then(response => {
+                    this.currentPromo = this.findPromoBySlug(this.id);
+					if (this.currentPromo === null || this.currentPromo === undefined) {
+						this.$router.replace({ name: 'promotions' });
 					}
-					this.dataLoaded = true;
-				}, error => {
-					console.error("Could not retrieve data from server. Please check internet connection and try again.");
-				});
-			},
+					
+					var temp_repo1 = this.findRepoByName('Sales & Events Side Banner');
+                    if(temp_repo1 && temp_repo1.images) {
+                        this.sideBanner = temp_repo1.images[0];
+                    } else {
+                        this.sideBanner = {
+                            "image_url": ""
+                        }
+                    }
+                    this.dataLoaded = true;
+                });
+            },
 			computed: {
 				...Vuex.mapGetters([
 					'property',
