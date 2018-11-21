@@ -26,7 +26,7 @@ require.config({
         //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
         'vue-simple-spinner': 'https://cdn.jsdelivr.net/npm/vue-simple-spinner@1.2.8/dist/vue-simple-spinner.min',
         'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', 
-        'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext',
+        'search-component': 'https://preview-mmvue.codecloudapp.com/search-component.vue?noext',
         'slick': 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min',
         'vue-slick': 'https://mmvue.codecloudapp.com/slick.vue?noext',
         'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.3/dist/vue-social-sharing.min',
@@ -142,7 +142,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
         created: function ()  {
             this.loadData().then(response => {
                 this.$store.dispatch("setDataLoaded", true);    
-                this.property.mm_host = this.property.mm_host.replace("http:", ""); 
+                this.property.mm_host = this.property.mm_host.replace("http:", "");
             });
         },
         watch: {
