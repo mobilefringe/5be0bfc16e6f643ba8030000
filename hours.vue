@@ -6,7 +6,7 @@
                 <inside-header-component pageName="Hours"></inside-header-component>
                 <div class="row main_container margin_30">
                     <div class="col-md-12">
-                        <h2 class="hours_heading caps">Hours</h2>
+                        <h2 class="hours_heading caps">Regular Hours</h2>
                         <div class="hours_container">
                             <div class="row hours_div" v-for="hour in hours">
                                 <div class="col-xs-6 col-sm-4 col-md-3">
