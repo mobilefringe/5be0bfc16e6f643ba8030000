@@ -143,7 +143,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
             this.loadData().then(response => {
                 this.$store.dispatch("setDataLoaded", true);   
                 this.property.mm_host = this.property.mm_host.replace("http:", "");   
-                    console.log("main this.property.mm_host", this.property.mm_host)
+                console.log("main this.property.mm_host", this.property.mm_host)
             });
         },
         watch: {
@@ -164,7 +164,8 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                 }
             },
             ...Vuex.mapGetters([
-                'dataLoaded'
+                'dataLoaded',
+                'property'
             ])
         },
         methods: {
