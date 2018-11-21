@@ -27,7 +27,7 @@
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 footer_newsletter">
+                <div class="col-xs-12 col-sm-6 col-md-8 footer_newsletter">
                     <!--<p class="footer_heading">NEWSLETTER SUBSCRIPTION</p>-->
                     <!--<label for="emailAddress" class="accessibility">Enter Email Address</label>-->
                     <!--<input id="emailAddress" v-model="newsletter_email" type="text" placeholder="Susbcribe to Newsletter" class="newsletter_control" required />-->
