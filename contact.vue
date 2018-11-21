@@ -79,7 +79,8 @@
                     loginPending: null,
                     formSuccess: false,
                     formError: false,
-                    time: new Date()
+                    time: new Date(),
+                    sideBanner: null
                 }
             },
             created() {
