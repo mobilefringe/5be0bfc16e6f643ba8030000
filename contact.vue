@@ -84,7 +84,6 @@
                 }
             },
             created() {
-                console.log("Site", Site)
                 this.loadData().then(response => {
                     // this.currentPage = response[0].data;
                     var temp_repo1 = this.findRepoByName('Contact Side Banner');
