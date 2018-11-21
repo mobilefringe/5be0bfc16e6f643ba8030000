@@ -56,6 +56,7 @@
 					dataLoaded: false,
 					currentEvent: null,
 				    siteInfo: site,
+				    sideBanner: null
 				}
 			},
 // 			created() {
