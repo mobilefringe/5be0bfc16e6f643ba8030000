@@ -346,7 +346,7 @@ footer {
     }
   }
   .footer_newsletter {
-    border-right: 1px solid #979797;
+    // border-right: 1px solid #979797;
     border-left: 1px solid #979797;
     .newsletter_control {
       margin-bottom: 15px;
