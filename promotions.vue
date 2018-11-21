@@ -120,7 +120,8 @@
                 return {
                     dataLoaded: false,
                     toggleEvents: false,
-                    togglePromos: false
+                    togglePromos: false,
+                    sideBanner: null
                 }
             },
             created (){
