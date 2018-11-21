@@ -67,7 +67,7 @@
 </style>
 
 <script>
-    define(["Vue", "vuex", "lightbox"], function(Vue, Vuex, lightbox) {
+    define(["Vue", "vuex", "json!site.json"], function(Vue, Vuex, lightbox) {
         return Vue.component("leasing-component", {
             template: template, // the variable template will be injected
             data: function() {
