@@ -7,7 +7,7 @@
                 <div class="main_container margin_30">
                     <div class="details_row">
                         <div class="details_col_3">
-                            <img class="img_max" src="http://placehold.it/440x1200" alt="" />    
+                            <img class="img_max" v-if="sideBanner" :src="sideBanner.image_url" alt="" />    
                         </div>
                         <div class="details_col_9">
                             <div class="row">
