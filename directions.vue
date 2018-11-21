@@ -73,11 +73,7 @@
             data: function() {
                 return {
                     dataLoaded: false,
-                    pageBanner: null,
-                    currentPage: null,
-                    leasingPlans: null,
-                    leasingDemos: null,
-                    leasingImages: null
+                    currentPage: null
                 }
             },
             created() {
