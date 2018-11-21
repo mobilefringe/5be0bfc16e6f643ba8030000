@@ -4,7 +4,7 @@
         <transition name="fade">
             <div v-if="dataLoaded"  v-cloak> 
                 <inside-header-component pageName="Hours"></inside-header-component>
-                <div class="row">
+                <div class="row main_container margin_30">
                     <div class="col-md-12">
                         <h2 class="hours_heading caps">Hours</h2>
                         <div class="hours_container">
