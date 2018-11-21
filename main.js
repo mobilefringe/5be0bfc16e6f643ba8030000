@@ -169,8 +169,13 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
             loadData: async function() {
                 try{
                     await this.$store.dispatch('initializeApi', { site: "coralridge", version: "v4" });
-                    // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                    await this.$store.dispatch("getData","property");
+                    this.property.mm_host = this.property.mm_host.replace("http:", "");   
+                    
                     let results = await Promise.all([this.$store.dispatch("INITIALIZE_LOCALE"), this.$store.dispatch("getData", "property"), this.$store.dispatch("getData", "hours"), this.$store.dispatch("getData", "stores")]);
+                    
+                     await Promise.all([this.$store.dispatch("LOAD_META_DATA")]);
+                     
                 } catch (e) {
                     console.log("Error loading data: " + e.message);    
                 }
