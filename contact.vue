@@ -5,7 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
                 <inside-header-component pageName="Contact Us"></inside-header-component>
                 <div class="main_container margin_30">
-                    <div class="details_row">
+                    <div class="details_row contact_us_container">
                         <div class="details_col_3">
                             <img class="img_max" v-if="sideBanner" :src="sideBanner.image_url" alt="" />    
                         </div>
