@@ -2,7 +2,7 @@
     <div> <!-- without an outer container div this component template will not render -->
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
-            <div v-if="dataLoaded" class="main_container margin_30" v-cloak> 
+            <div v-if="dataLoaded"  v-cloak> 
                 <inside-header-component pageName="Hours"></inside-header-component>
                 <div class="row">
                     <div class="col-md-12">
