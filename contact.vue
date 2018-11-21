@@ -107,6 +107,7 @@
             methods: {
                 loadData: async function () {
                     try {
+                        this.property.mm_host = this.property.mm_host.replace("http:", "");
                         let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/milton-contact-us.json"}),this.$store.dispatch("getData","repos")]);
                         
                         return results;
