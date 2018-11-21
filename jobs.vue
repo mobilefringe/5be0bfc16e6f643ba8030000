@@ -3,11 +3,6 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <div class="inside_header_background">
-                    <div class="main_container">
-                        <h2>Jobs</h2>
-                    </div>
-                </div>
                 <inside-header-component pageName="Jobs"></inside-header-component>
                 <div class="main_container mobile_padding margin_30">
                     <div class="details_row">
@@ -114,7 +109,7 @@ define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "bootstrap-vue
             methods: {
                 loadData: async function () {
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "jobs")]);
+                        let results = await Promise.all([this.$store.dispatch("getData", "jobs"), this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
