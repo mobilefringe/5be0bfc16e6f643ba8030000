@@ -111,7 +111,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-lazy-load", "bootstrap-vue"], function (Vue, Vuex, moment, tz, VueMoment, VueLazyload, BootstrapVue) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-lazy-load", "bootstrap-vue", "json!site"], function (Vue, Vuex, moment, tz, VueMoment, VueLazyload, BootstrapVue, Site) {
         Vue.use(BootstrapVue);
         Vue.use(VueLazyload);
         return Vue.component("promotions-component", {
