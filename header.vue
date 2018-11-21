@@ -5,7 +5,7 @@
                 <div class="col-md-3">
                     <div class="site_logo center-block">
                         <a href="/">
-                            <img :alt="siteInfo.siteName" src="//codecloud.cdn.speedyrails.net/sites/5af1d01b6e6f64457d110000/image/png/1518446490000/Logo@2x.png">
+                            <img :alt="siteInfo.siteName" src="//codecloud.cdn.speedyrails.net/sites/5be0bfc16e6f643ba8030000/image/png/1542734272332/New Coral Ridge Mall Logo_2012.png">
                         </a>
                     </div>
                     <div @click="showMenu = !showMenu" :class="{ open: showMenu }" id="menu-icon">
