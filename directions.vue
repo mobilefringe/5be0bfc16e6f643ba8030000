@@ -67,7 +67,7 @@
 </style>
 
 <script>
-    define(["Vue", "vuex", "json!site.json"], function(Vue, Vuex, lightbox) {
+    define(["Vue", "vuex", "json!site.json"], function(Vue, Vuex, Site) {
         return Vue.component("leasing-component", {
             template: template, // the variable template will be injected
             data: function() {
@@ -96,7 +96,7 @@
                 loadData: async function () {
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     try {
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/lindsaysquare-leasing.json"})]);
+                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/"+Site.subdomain+"-leasing.json"})]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
