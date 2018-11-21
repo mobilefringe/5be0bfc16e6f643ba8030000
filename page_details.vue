@@ -49,7 +49,6 @@
             methods: {
                 updateCurrentPage(id) {
                     var _this = this;
-                    console.log("this.property.mm_host",this.property.mm_host)
                     this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + this.id + ".json" }).then(function (response) {
                         _this.currentPage = response.data;
                         _this.dataLoaded = true;
