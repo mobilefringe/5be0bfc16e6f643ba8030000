@@ -134,7 +134,7 @@ define([], function () {
                     meta: {
                         pageName: 'Hours',
                     },
-                    name: 'newsletter'
+                    name: 'hours'
                 }
             ]
         },
@@ -149,7 +149,13 @@ define([], function () {
                         pageName: 'Promotions',
                     },
                     name: 'promotions'
-                },
+                }
+            ]
+        },
+        {
+            path: '/promotions',
+            component: view('default'),
+            children: [
                 {
                     path: ':id',
                     component: view('promotion_details'),
@@ -161,21 +167,6 @@ define([], function () {
                 }
             ]
         },
-        // {
-        //     path: '/promotions',
-        //     component: view('default'),
-        //     children: [
-        //         {
-        //             path: ':id',
-        //             component: view('promotion_details'),
-        //             meta: {
-        //                 pageName: 'Promotions',
-        //             },
-        //             name: 'promotionDetails',
-        //             props: true
-        //         }
-        //     ]
-        // },
         {
             path: '/stores',
             component: view('default'),
