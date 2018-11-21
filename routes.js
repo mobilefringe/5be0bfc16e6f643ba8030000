@@ -138,21 +138,21 @@ define([], function () {
                 }
             ]
         },
-        {
-            path: '/promotions',
-            component: view('default'),
-            children: [
-                {
-                    path: ':id',
-                    component: view('promotion_details'),
-                    meta: {
-                        pageName: 'Promotions',
-                    },
-                    name: 'promotionDetails',
-                    props: true
-                }
-            ]
-        },
+        // {
+        //     path: '/promotions',
+        //     component: view('default'),
+        //     children: [
+        //         {
+        //             path: ':id',
+        //             component: view('promotion_details'),
+        //             meta: {
+        //                 pageName: 'Promotions',
+        //             },
+        //             name: 'promotionDetails',
+        //             props: true
+        //         }
+        //     ]
+        // },
         {
             path: '/stores',
             component: view('default'),
