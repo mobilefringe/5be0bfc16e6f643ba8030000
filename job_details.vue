@@ -70,7 +70,7 @@
 // 				});
 				
 // 			},
- created() {
+            created() {
                 this.loadData().then(response => {
                     var temp_repo1 = this.findRepoByName('Jobs Side Banner');
                     if(temp_repo1 && temp_repo1.images) {
@@ -105,6 +105,14 @@
                 ])
             },
             methods: {
+                oadData: async function () {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData", "jobs"), this.$store.dispatch("getData", "repos")]);
+                        return results;
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
 				isMultiDay(currentJob) {
 					var timezone = this.timezone
 					var start_date = moment(currentJob.start_date).tz(timezone).format("MM-DD-YYYY")
