@@ -90,9 +90,9 @@
                         if(temp_repo1 && temp_repo1.images) {
                             this.sideBanner = temp_repo1.images[0];
                         } else {
-                            this.sideBanner = {
-                                "image_url": ""
-                            }
+                        this.sideBanner = {
+                            "image_url": ""
+                        }
                     } 
                     this.dataLoaded = true;
                 });
