@@ -53,7 +53,8 @@
                 return {
                     dataLoaded: false,
                     currentPromo: null,
-                    siteInfo: site
+                    siteInfo: site,
+                    sideBanner: null
                 }
             },
             created (){
