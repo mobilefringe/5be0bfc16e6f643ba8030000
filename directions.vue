@@ -82,36 +82,6 @@
             },
             created() {
                 this.loadData().then(response => {
-                    var temp_repo = this.findRepoByName('Leasing Banner');
-                    if(temp_repo !== null && temp_repo !== undefined) {
-                       temp_repo = temp_repo.images;
-                       this.pageBanner = temp_repo[0];
-                    }
-                    else {
-                        this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1531495616000/inside_banner.png"
-                        }
-                    }
-                    
-                    var leasing_docs = this.findRepoByName('Leasing Documents');
-                    var _this = this;
-                    if (leasing_docs != null && leasing_docs != undefined) {
-                        leasing_docs = leasing_docs.images;
-                        _.forEach(leasing_docs, function(value, key) {
-                            if (value.id == 44690) {
-                                _this.leasingPlans = value.image_url;
-                            }   
-                            if (value.id == 41068) {
-                                _this.leasingDemos = value.image_url;
-                            }
-                        });
-                    }
-
-                    var repo_data = this.findRepoByName("Leasing Images");
-                    if(repo_data != null && repo_data !== undefined && repo_data.images.length > 0){
-                        this.leasingImages = repo_data.images;
-                    }
-                                
                     if(response && response[0]) {
                         this.currentPage = response[0].data;
                     }
