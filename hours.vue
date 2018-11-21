@@ -3,7 +3,7 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" class="main_container margin_30" v-cloak> 
-                <inside-header-component pageName="Jobs"></inside-header-component>
+                <inside-header-component pageName="Hours"></inside-header-component>
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="hours_heading caps">Hours</h2>
