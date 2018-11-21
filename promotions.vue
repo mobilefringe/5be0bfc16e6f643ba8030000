@@ -133,7 +133,8 @@
                     'property',
                     'timezone',
                     'processedEvents',
-                    'processedPromos'
+                    'processedPromos',
+                    'findRepoByName'
                 ]),
                 eventList: function events() {
                     var events = this.processedEvents;
