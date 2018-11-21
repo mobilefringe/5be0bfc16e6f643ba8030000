@@ -184,7 +184,7 @@
                             }
                             
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "http://placehold.it/400x400";
+                                value.image_url = Site.default_logo_url;
                             }
                             
                             value.description_short = _.truncate(value.description, { 'length': 100, 'separator': ' ' });
