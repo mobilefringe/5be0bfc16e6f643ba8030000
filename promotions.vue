@@ -34,7 +34,7 @@
                                                     <span v-else>{{ property.name }}</span>
                                                     <span>| </span>
                                                     <span v-if="isMultiDay(promo)" class="promo_date">{{ promo.start_date | moment("MMMM D", timezone)}} to {{ promo.end_date | moment("MMMM D", timezone)}}</span>
-                                                    <span v-else class="promo_date">{{ promo.start_date | moment("MMMM D", timezone)}}</span>
+                                                    <span v-else class="promo_date">{{ promo.start_date | moment("MMM D", timezone)}}</span>
                                                 </p>
                                                 <div class="promo_desc" v-html="promo.description_short"></div>
                                                 <router-link :to="'/promotions/'+ promo.slug" >
@@ -80,7 +80,7 @@
                                                     <span v-else>{{ property.name }}</span>
                                                     <span>| </span>
                                                     <span v-if="isMultiDay(event)" class="promo_date">{{ event.start_date | moment("MMMM D", timezone)}} to {{ event.end_date | moment("MMMM D", timezone)}}</span>
-                                                    <span v-else class="promo_date">{{ event.start_date | moment("MMMM D", timezone)}}</span>
+                                                    <span v-else class="promo_date">{{ event.start_date | moment("MMM D", timezone)}}</span>
                                                 </p>
                                                 <div class="promo_desc" v-html="event.description_short"></div>
                                                 <router-link :to="'/events/'+ event.slug" >
