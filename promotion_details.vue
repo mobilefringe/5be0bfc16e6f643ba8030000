@@ -83,6 +83,13 @@
                 ])
             },
             methods: {
+                loadData: async function () {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData", "events"), this.$store.dispatch("getData","promotions"), this.$store.dispatch("getData","repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
 				isMultiDay(currentPromo) {
 					var timezone = this.timezone
 					var start_date = moment(currentPromo.start_date).tz(timezone).format("MM-DD-YYYY")
