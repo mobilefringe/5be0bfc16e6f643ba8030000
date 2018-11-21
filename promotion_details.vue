@@ -10,7 +10,7 @@
                             <img v-if="sideBanner" class="img_max" :src="sideBanner.image_url" alt="" />        
                         </div>
                         <div class="details_col_9" v-if="currentPromo">
-                            <router-link to="{name : 'promotions'}">
+                            <router-link :to="{ name: 'promotions' }">
                                 <div class="inside_page_header"><i class="fa fa-caret-left"></i> Back to List</div>
                             </router-link>
                             <img v-lazy="currentPromo.image_url" :alt="'Promotion: ' + currentPromo.name" class="margin_20 img_max"/>
