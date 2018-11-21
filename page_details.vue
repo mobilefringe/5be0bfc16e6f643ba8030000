@@ -27,7 +27,8 @@
             data: function data() {
                 return {
                     dataLoaded: false,
-                    currentPage: null
+                    currentPage: null,
+                    sideBanner: null
                 }
             },
             created() {
