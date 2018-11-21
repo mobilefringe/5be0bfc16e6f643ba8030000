@@ -71,7 +71,7 @@
 // 			},
             created (){
                 this.loadData().then(response => {
-                    this.currentPromo = this.findPromoBySlug(this.id);
+                    this.currentPromo = this.findEventBySlug(this.id);
 					if (this.currentPromo === null || this.currentPromo === undefined) {
 						this.$router.replace({ name: 'promotions' });
 					}
