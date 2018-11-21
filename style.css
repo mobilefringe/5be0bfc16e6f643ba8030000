@@ -984,6 +984,14 @@ footer {
   line-height: 1.875rem !important;
 }
 
+/******* Contact  us *****/ {
+    .contact_us_container {
+        .form-control{
+            margin-bottom:20px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
   .visible_phone {
     display: block;
