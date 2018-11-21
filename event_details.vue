@@ -69,7 +69,7 @@
 // 					console.error("Could not retrieve data from server. Please check internet connection and try again.");
 // 				});
 // 			},
-created (){
+            created (){
                 this.loadData().then(response => {
                     this.currentPromo = this.findPromoBySlug(this.id);
 					if (this.currentPromo === null || this.currentPromo === undefined) {
@@ -96,6 +96,13 @@ created (){
 				])
 			},
 			methods: {
+			    loadData: async function () {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData","events"), this.$store.dispatch("getData","repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
 				isMultiDay(currentEvent) {
 					var timezone = this.timezone
 					var start_date = moment(currentEvent.start_date).tz(timezone).format("MM-DD-YYYY")
