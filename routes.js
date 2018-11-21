@@ -130,11 +130,20 @@ define([], function () {
             children: [
                 {
                     path: '',
-                    component: view('promotions-and-events'),
+                    component: view('promotions'),
                     meta: {
-                        pageName: 'Promotions & Events',
+                        pageName: 'Promotions',
                     },
-                    name: 'promotions-and-events'
+                    name: 'promotions'
+                },
+                {
+                    path: ':id',
+                    component: view('promotion_details'),
+                    meta: {
+                        pageName: 'Promotions',
+                    },
+                    name: 'promotionDetails',
+                    props: true
                 }
             ]
         },
