@@ -55,6 +55,7 @@
                     dataLoaded: false,
                     currentJob: null,
                     siteInfo: site,
+                    sideBanner: null
                 }
             },
 //             created() {
