@@ -10,46 +10,6 @@
                             <div class="page_body" v-html="currentPage.body"></div>
                         </div>
                     </div>
-                    <div class="row margin_20">
-                        <div class="col-sm-12">
-                            <div>
-                                <router-link to="/leasing/permanent" class="hvr-icon-forward">
-    	                            <i class="fa fa-caret-right hvr-icon"></i> <span class="read_more">Permanent Leasing Form</span>
-                                </router-link>
-                            </div>
-                            <div>
-                                <router-link to="/leasing/specialty" class="hvr-icon-forward">
-    	                            <i class="fa fa-caret-right hvr-icon"></i> <span class="read_more">Specialty Leasing Form</span>
-                                </router-link>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row margin_20">
-                        <div class="col-sm-4">
-                            <div v-if="leasingPlans">
-                                <a :href="leasingPlans" target="_blank" class="animated_btn leasing">
-                                    Download Leasing Plan
-                                </a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4">
-                            <div v-if="leasingDemos">
-                                <a :href="leasingDemos" target="_blank" class="animated_btn leasing">
-                                   Download Trade Area Demographics
-                                </a>    
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div v-if="leasingImages" class="row margin_20">
-                        <div v-for="image in leasingImages" class="col-sm-4 leasing_photo_container">
-                            <a :href="image.image_url" data-lightbox="leasing images">
-                                <div class="leasing_photo" :style="{ backgroundImage: 'url(' +image.image_url+ ')' }"></div>
-                                <p style="display:none;">{{image.id}}</p>
-                            </a>
-                        </div>
-                    </div>
     			</div>           
             </div>
         </transition>
