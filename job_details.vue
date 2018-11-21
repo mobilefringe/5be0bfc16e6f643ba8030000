@@ -60,10 +60,7 @@
 //             created() {
                 
 // 				this.$store.dispatch("getData", "jobs").then(response => {
-// 					this.currentJob = this.findJobBySlug(this.id);
-// 					if (this.currentJob === null || this.currentJob === undefined) {
-// 						this.$router.replace({ path: '/jobs' });
-// 					}
+
 // 					this.dataLoaded = true;
 // 				}, error => {
 // 					console.error("Could not retrieve data from server. Please check internet connection and try again.");
@@ -72,6 +69,11 @@
 // 			},
             created() {
                 this.loadData().then(response => {
+					this.currentJob = this.findJobBySlug(this.id);
+					if (this.currentJob === null || this.currentJob === undefined) {
+						this.$router.replace({ path: '/jobs' });
+					}
+					
                     var temp_repo1 = this.findRepoByName('Jobs Side Banner');
                     if(temp_repo1 && temp_repo1.images) {
                         this.sideBanner = temp_repo1.images[0];
@@ -105,7 +107,7 @@
                 ])
             },
             methods: {
-                oadData: async function () {
+                loadData: async function () {
                     try {
                         let results = await Promise.all([this.$store.dispatch("getData", "jobs"), this.$store.dispatch("getData", "repos")]);
                         return results;
