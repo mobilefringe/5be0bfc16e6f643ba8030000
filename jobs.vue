@@ -30,8 +30,8 @@
                                                     </router-link>
                                                     <span v-else>{{ property.name }}</span>
                                                     <span>| </span>
-                                                    <span v-if="isMultiDay(job)" class="promo_date">{{ job.start_date | moment("MMMM D", timezone)}} to {{ job.end_date | moment("MMMM D", timezone)}}</span>
-                                                    <span v-else class="promo_date">{{ job.start_date | moment("MMMM D", timezone)}}</span>
+                                                    <span v-if="isMultiDay(job)" class="promo_date">{{ job.start_date | moment("MMM D", timezone)}} to {{ job.end_date | moment("MMM D", timezone)}}</span>
+                                                    <span v-else class="promo_date">{{ job.start_date | moment("MMM D", timezone)}}</span>
                                                 </p>
                                                 <div class="promo_desc" v-html="job.description_short"></div>
                                                 <router-link :to="'/jobs/'+ job.slug" >
