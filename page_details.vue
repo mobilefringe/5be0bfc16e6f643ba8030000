@@ -55,6 +55,7 @@
                         console.error( "Could not retrieve data from server. Please check internet connection and try again.");
                         _this.$router.replace({ name: '404' });
                     });
+                    
                 //     var temp_repo1 = this.findRepoByName('Sales & Events Side Banner');
                 // if(temp_repo1 && temp_repo1.images) {
                 //     this.sideBanner = temp_repo1.images[0];
@@ -63,7 +64,14 @@
                 //         "image_url": ""
                 //     }
                 // } 
-                }
+                },
+                loadData: async function () {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData","promotions"), this.$store.dispatch("getData","repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
             }
         });
     });
