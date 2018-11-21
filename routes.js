@@ -125,6 +125,20 @@ define([], function () {
             ]
         },
         {
+            path: '/hours',
+            component: view('default'),
+            children: [
+                {
+                    path: '',
+                    component: view('newsletter'),
+                    meta: {
+                        pageName: 'Newsletter',
+                    },
+                    name: 'newsletter'
+                }
+            ]
+        },
+        {
             path: '/sales-and-events',
             component: view('default'),
             children: [
