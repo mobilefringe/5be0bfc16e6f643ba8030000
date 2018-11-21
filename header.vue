@@ -222,11 +222,24 @@
                     this.windowWidth = window.innerWidth;
                 },
                 onOptionSelect(option) {
-                    this.$nextTick(function() {
-                        this.search = ""
-                    });
-                    this.$router.push("/stores/" + option.slug);
-                }
+                    console.log("option", option)
+                  this.$router.push({
+                    name: "search-results",
+                    query: { searchQuery: this.search_result },
+                    params: { results: option }
+                  });
+                  this.$nextTick(function() {
+                    this.search_result = "";
+                  });
+                },
+                loadData: async function() {
+                    try{
+                        
+                        let results = await Promise.all([this.$store.dispatch("getData", "stores"), this.$store.dispatch("getData", "events"),this.$store.dispatch("getData", "promotions"),this.$store.dispatch("getData", "jobs")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);    
+                    }
+                },
             },
             beforeDestroy: function() {
                 window.removeEventListener('resize', this.getWindowWidth);
