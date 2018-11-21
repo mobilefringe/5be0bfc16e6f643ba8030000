@@ -60,7 +60,7 @@
                 this.loadData().then(response => {
                     this.currentPromo = this.findPromoBySlug(this.id);
 					if (this.currentPromo === null || this.currentPromo === undefined) {
-						this.$router.replace({ path: '/promotions' });
+						this.$router.replace({ name: 'promotions' });
 					}
 					
 					var temp_repo1 = this.findRepoByName('Sales & Events Side Banner');
