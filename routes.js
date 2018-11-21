@@ -130,7 +130,7 @@ define([], function () {
             children: [
                 {
                     path: '',
-                    component: view('newsletter'),
+                    component: view('hours'),
                     meta: {
                         pageName: 'Newsletter',
                     },
