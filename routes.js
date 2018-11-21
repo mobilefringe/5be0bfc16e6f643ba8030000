@@ -139,6 +139,20 @@ define([], function () {
             ]
         },
         {
+            path: '/directions',
+            component: view('default'),
+            children: [
+                {
+                    path: '',
+                    component: view('hours'),
+                    meta: {
+                        pageName: 'Hours',
+                    },
+                    name: 'hours'
+                }
+            ]
+        },
+        {
             path: '/sales-and-events',
             component: view('default'),
             children: [
