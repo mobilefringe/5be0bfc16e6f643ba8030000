@@ -103,7 +103,8 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'findJobBySlug'
+                    'findJobBySlug',
+                    'findRepoByName'
                 ])
             },
             methods: {
