@@ -146,6 +146,9 @@
                     window.addEventListener('resize', this.getWindowWidth);
                     this.getWindowWidth();
                 });
+                this.loadData().then(response => {
+                    this.headerReady = true;
+                });
             },
             mounted() {
                 this.$nextTick(function() {
