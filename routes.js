@@ -144,11 +144,11 @@ define([], function () {
             children: [
                 {
                     path: '',
-                    component: view('hours'),
+                    component: view('directions'),
                     meta: {
-                        pageName: 'Hours',
+                        pageName: 'Directions',
                     },
-                    name: 'hours'
+                    name: 'directions'
                 }
             ]
         },
