@@ -29,7 +29,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "vue!vue-slick"], function (Vue, Vuex, slick) {
+    define(["Vue", "vuex", "vue!vue-slick", "vue!imageloader.vue"], function (Vue, Vuex, slick) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
