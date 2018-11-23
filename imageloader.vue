@@ -81,6 +81,9 @@
                     this.dataLoaded = true;
                 });
             },
+            mounted(){
+                
+            },
             computed: {
                 ...Vuex.mapGetters([
                     'property'
