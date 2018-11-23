@@ -119,7 +119,7 @@
                     siteInfo: site,
                     search_result: null,
                     suggestionAttribute: "name",
-                    keys: ["name", "description", "tags", "keywords", "store.name"],
+                    keys: ["meta_description", "meta_keywords", "meta_title"]//["name", "description", "tags", "keywords", "store.name"],
                     headerReady: false
                 }
             },
