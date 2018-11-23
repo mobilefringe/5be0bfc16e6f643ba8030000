@@ -45,6 +45,12 @@
 	define(["Vue", "vuex", "jquery"], function(Vue, Vuex, $) {
 		return Vue.component("image-loader-component", {
             template: template, // the variable template will be injected
+            props: {
+                storelist: {
+                    type: String,
+                    // required: true
+                },
+            },
             data: function () {
                 return {
                     
