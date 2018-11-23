@@ -51,11 +51,7 @@
                     // required: true
                 },
             },
-            data: function () {
-                return {
-                    
-                }
-            },
+            data: function () {return {}},
             created() {
                 this.loadData().then(response => {
                     // this.currentPage = response[0].data;
