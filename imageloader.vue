@@ -46,7 +46,7 @@
 		return Vue.component("image-loader-component", {
             template: template, // the variable template will be injected
             props: {
-                storelist: {
+                imageSrc: {
                     type: String,
                     // required: true
                 },
