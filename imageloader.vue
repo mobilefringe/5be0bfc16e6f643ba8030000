@@ -47,9 +47,7 @@
             template: template, // the variable template will be injected
             data: function () {
                 return {
-                    dataLoaded: false,
-                    currentPage: null,
-                    siteInfo: site
+                    
                 }
             },
             created() {
