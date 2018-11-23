@@ -31,7 +31,7 @@
 
 <script>
 	define(["Vue", "vuex", "json!site.json"], function(Vue, Vuex, site) {
-		return Vue.component("location-component", {
+		return Vue.component("image-loader-component", {
             template: template, // the variable template will be injected
             data: function () {
                 return {
