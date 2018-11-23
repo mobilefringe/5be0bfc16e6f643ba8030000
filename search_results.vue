@@ -14,8 +14,7 @@
                                         <div class="no_logo">
                                             <img src="//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png">
                                             <p class="store_details_name">
-                                                <!--<span v-if="result.store_front_url_abs">{{result.name}}</span>-->
-                                                <span v-if="result.meta_title">{{result.meta_title}}</span>
+                                                <span v-if="result.store_front_url_abs">{{result.name}}</span>
                                                 <span v-else>{{ result.store.name }}</span>
                                             </p>
                                         </div>    
@@ -30,8 +29,7 @@
                                 </div>
                                 <div class="col-sm-9 search_result_content">
                                     <h3>{{result.name}}</h3>
-                                    <!--<p>{{truncated(result.description)}}</p>-->
-                                    <p>{{truncated(result.meta_description)}}</p>
+                                    <p>{{truncated(result.description)}}</p>
                                     <router-link v-if="result.store_front_url_abs" class="result_link hvr-icon-forward" :to="{ name: 'storeDetails', params:{ id:result.slug }}">
                                         <i class="fa fa-caret-right hvr-icon"></i> View Store Details
                                     </router-link>
