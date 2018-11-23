@@ -169,7 +169,7 @@
                     'processedJobs'
                 ]),
                 searchList() {
-                    console.log()
+                    console.log("seo", this.$store.state.seo)
                     var events = this.processedEvents;
                     _.forEach(events, function (value, key) {
                         if (_.includes(value.eventable_type, 'Property')) {
