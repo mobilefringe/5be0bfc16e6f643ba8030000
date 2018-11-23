@@ -3,7 +3,6 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <image-loader></image-loader>
                 <div class="home_banner_container">
                     <slick ref="slick" :options="slickOptions">
                         <div v-if="homeBanners" v-for="banner in homeBanners">
