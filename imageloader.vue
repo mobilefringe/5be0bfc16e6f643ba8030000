@@ -1,6 +1,6 @@
 <template>
     <div> <!-- for some reason if you do not put an outer container div this component template will not render -->
-        <div>
+        <div class="post-header">
             
         </div>
     </div>
