@@ -200,7 +200,7 @@
                     });
                     
                     var list = _.union( stores, events, promos, jobs );
-                    return list;
+                    return this.$store.state.seo; //list;
                 },
                 locale: {
                     get () {
