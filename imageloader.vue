@@ -1,9 +1,8 @@
 <template>
     <div> <!-- for some reason if you do not put an outer container div this component template will not render -->
-        <loading-spinner v-if="!dataLoaded"></loading-spinner>
-        <transition name="fade">
+        <div>
             
-        </transition>
+        </div>
     </div>
 </template>
 <style>
