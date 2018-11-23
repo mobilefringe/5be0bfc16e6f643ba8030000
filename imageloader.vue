@@ -123,16 +123,16 @@
                     return this.property.name + ' ' + this.property.address1 + ' ' + this.property.city + ' ' + this.property.country + ' ' +this.property.province_state + ' ' + this.property.province_state
                 }
             },
-            methods: {
-                loadData: async function () {
-                    try {
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/milton-directions.json"})]);
-                        return results;
-                    } catch (e) {
-                        console.log("Error loading data: " + e.message);
-                    }
-                }
-            }
+            // methods: {
+            //     loadData: async function () {
+            //         try {
+            //             let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/milton-directions.json"})]);
+            //             return results;
+            //         } catch (e) {
+            //             console.log("Error loading data: " + e.message);
+            //         }
+            //     }
+            // }
         });
 	});
 </script>
