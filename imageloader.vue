@@ -43,7 +43,7 @@
 </style>
 <script>
 	define(["Vue", "vuex", "jquery"], function(Vue, Vuex, $) {
-		return Vue.component("image-loader-component", {
+		return Vue.component("image-loader", {
             template: template, // the variable template will be injected
             props: {
                 imageSrc: {
