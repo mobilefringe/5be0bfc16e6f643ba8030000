@@ -92,6 +92,39 @@
                 }
             },
             methods: {
+                bigSrc(){
+                    
+                    // Find all of the CssRule objects inside the inline stylesheet
+                    var styles = doc.querySelector("style").sheet.cssRules;
+                    // Fetch the background-image declaration...
+                    var bgDecl = (function() {
+                      // ...via a self-executing function, where a loop is run
+                      var bgStyle,
+                        i,
+                        l = styles.length;
+                      for (i = 0; i < l; i++) {
+                        // ...checking if the rule is the one targeting the
+                        // enhanced header.
+                        if (
+                          styles[i].selectorText &&
+                          styles[i].selectorText == "." + enhancedClass
+                        ) {
+                          // If so, set bgDecl to the entire background-image
+                          // value of that rule
+                          bgStyle = styles[i].style.backgroundImage;
+                          // ...and break the loop.
+                          break;
+                        }
+                      }
+                      // ...and return that text.
+                      return bgStyle;
+                    })();
+                    // Finally, return a match for the URL inside the background-image
+                    // by using a fancy regex i Googled up, if the bgDecl variable is
+                    // assigned at all.
+                    return bgDecl && bgDecl.match(/(?:\(['|"]?)(.*?)(?:['|"]?\))/)[1];
+                  })();
+            }
             //     loadData: async function () {
             //         try {
             //             let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/milton-directions.json"})]);
