@@ -52,12 +52,12 @@
                 },
             },
             data: function () {return {}},
-            created() {
-                this.loadData().then(response => {
-                    // this.currentPage = response[0].data;
-                    this.dataLoaded = true;
-                });
-            },
+            // created() {
+            //     this.loadData().then(response => {
+            //         // this.currentPage = response[0].data;
+            //         this.dataLoaded = true;
+            //     });
+            // },
             mounted(){
                 var win, doc, img, header, enhancedClass;
                   // Quit early if older browser (e.g. IE8).
