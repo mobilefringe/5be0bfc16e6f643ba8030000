@@ -21,7 +21,7 @@ require.config({
         'datastore_getters': 'https://preview-mmvue.codecloudapp.com/datastore_getters',
         'datastore_actions': 'https://preview-mmvue.codecloudapp.com/datastore_actions',
         'datastore_mutations': 'https://preview-mmvue.codecloudapp.com/datastore_mutations',
-        'datastore': 'https://mmvue.codecloudapp.com/datastore',
+        'datastore': 'https://preview-mmvue.codecloudapp.com/datastore',
         'vuex-router-sync': 'https://mmvue.codecloudapp.com/vuex-router-sync',
         //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
         'vue-simple-spinner': 'https://cdn.jsdelivr.net/npm/vue-simple-spinner@1.2.8/dist/vue-simple-spinner.min',
@@ -35,11 +35,11 @@ require.config({
         'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate',
         'vue-select': 'https://cdn.jsdelivr.net/npm/vue-select@2.3.0/dist/vue-select.min',
         'bootstrap-vue' : 'https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue',
-        //mappplic-png--map dependencies
+        //mapplic dependencies
         'mousewheel' : 'https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min',
-        'mapplic' : 'https://mmvue.codecloudapp.com/mapplic',
+        'mapplic' : 'https://preview-mmvue.codecloudapp.com/mapplic',
         'hammer' : 'https://codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min',
-        'mapplic-png-map' : 'https://mmvue.codecloudapp.com/mapplic_png.vue?noext',
+        'mapplic-map' : 'https://preview-mmvue.codecloudapp.com/mapplic.vue?noext',
         'loader': 'https://mmvue.codecloudapp.com/loader.vue?noext'
     }
 });
