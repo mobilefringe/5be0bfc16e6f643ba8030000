@@ -110,7 +110,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "jquery", "bootstrap-vue",  "vue!mapplic-map"], function (Vue, Vuex, moment, $, BootstrapVue, MapplicComponent) {
+    define(["Vue", "vuex", "moment", "jquery", "bootstrap-vue",  "vue!mapplic-map", 'vue!loader.vue'], function (Vue, Vuex, moment, $, BootstrapVue, MapplicComponent) {
         Vue.use(BootstrapVue);
         return Vue.component("store-details-component", {
             template: template, // the variable template will be injected,
