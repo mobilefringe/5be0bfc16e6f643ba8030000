@@ -139,9 +139,9 @@
                     this.updateCurrentStore(this.$route.params.id);
                 },
                 currentStore: function () {
-                    if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
-                        this.currentStore.store_front_url_abs = "http://placehold.it/600x600"
-                    }
+                    // if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
+                    //     this.currentStore.store_front_url_abs = "http://placehold.it/600x600"
+                    // }
                     this.currentStore.zoom = 2;
                     
                     if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
