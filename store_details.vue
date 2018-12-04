@@ -142,7 +142,13 @@
                     if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
                         this.currentStore.store_front_url_abs = "http://placehold.it/600x600"
                     }
+                    this.currentStore.zoom = 2;
                     
+                    if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
+                        this.currentStore.no_logo = true
+                    } else {
+                        this.currentStore.no_logo = false
+                    }
                     var vm = this;
                     var storeHours = [];
                     _.forEach(this.currentStore.store_hours, function (value, key) {
