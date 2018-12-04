@@ -212,7 +212,7 @@
                     category = this.findCategoryById(currentStoreCategory)
                     return category.name
                 },
-                etSVGurl() {
+                getSVGurl() {
                     return "https://www.mallmaverick.com" + this.property.svgmap_url;
                 },
                 svgMapRef() {
