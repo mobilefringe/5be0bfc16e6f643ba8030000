@@ -200,7 +200,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'stores',
+                    'processedStores',
                     'findStoreBySlug',
                     'findCategoryById',
                     'findHourById',
