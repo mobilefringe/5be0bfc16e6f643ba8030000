@@ -28,7 +28,7 @@
                             <div id="map" class="margin_20">
                                 <mapplic-map ref="svgmap_ref" :height="300" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="processedStores" :floorlist="floorList" :svgWidth="2500" :svgHeight="2500" @updateMap="updateSVGMap" :key="currentStore.id"></mapplic-map>
                             </div>
-                            <div class="inside_page_header">Store Hours & Information</div>
+                            <div class="inside_page_header"  v-if="storeHours">Store Hours & Information</div>
                             <ul v-if="storeHours" class="store_details_hours_list">
                                 <li v-for="hour in storeHours" :class="{ today: hour.todays_hours }">
                                     <div v-if="!hour.is_closed">
