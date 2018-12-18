@@ -226,7 +226,7 @@
                             store.svgmap_region = store.id;
                         }
                     })
-                    return this.processedStores;
+                    return stores;
                 },
                 floorList () {
                     var floor_list = [];
