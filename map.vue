@@ -62,7 +62,7 @@
                     return "https://www.mallmaverick.com" + this.property.map_url;
                 },
                 pngMapRef() {
-                    return this.$refs.pngmap_ref;
+                    return this.$refs.mapplic_ref;
                 },
                 floorList () {
                     var floor_list = [];
