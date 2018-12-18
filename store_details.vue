@@ -4,7 +4,7 @@
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
                 <inside-header-component :pageName="currentStore.name"></inside-header-component>
-                <div class="main_container margin_30">
+                <div class="main_container margin_30" id="store_dets_container">
                     <div class="details_row">
                         <div class="details_col_3">
                             <!--<img class="store_details_image center-block" :src="currentStore.store_front_url_abs" :alt="currentStore.name + ' Logo'" />-->
