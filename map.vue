@@ -61,7 +61,7 @@
                 getPNGurl() {
                     return "https://www.mallmaverick.com" + this.property.map_url;
                 },
-                pngMapRef() {
+                svgMapRef() {
                     return this.$refs.mapplic_ref;
                 },
                 floorList () {
