@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-sm-8 col-md-6">
                     <p class="footer_text"><a :href="siteInfo.googleMapsURL" target="_blank">{{ getPropertyAddress }}</a></p> 
-                    <p class="footer_text"><a :href="'tel:' +  property.contact_phone">{{ property.contact_phone }}</a> | <a href="/pages/milton-privacy-policy">Privacy Policy</a> | <router-link to="/jobs" exact>Jobs</router-link> | <a :href="siteInfo.propertyManagementURL" target="_blank">{{ siteInfo.propertyManagementName }}</a></p>
+                    <p class="footer_text"><a :href="'tel:' +  property.contact_phone">{{ property.contact_phone }}</a> | <a href="/pages/coralridge-privacy-policy">Privacy Policy</a> | <router-link to="/jobs" exact>Jobs</router-link> | <a :href="siteInfo.propertyManagementURL" target="_blank">{{ siteInfo.propertyManagementName }}</a></p>
                 </div>
             </div>
         </section>
