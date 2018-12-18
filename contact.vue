@@ -6,7 +6,7 @@
                 <inside-header-component pageName="Contact Us"></inside-header-component>
                 <div class="main_container margin_30">
                     <div class="details_row contact_us_container">
-                        <div class="details_col_3">
+                        <div class="details_col_3 hidden_phone">
                             <img class="img_max" v-if="sideBanner" :src="sideBanner.image_url" alt="" />    
                         </div>
                         <div class="details_col_9">
