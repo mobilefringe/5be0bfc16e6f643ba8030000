@@ -262,6 +262,7 @@
                     this.svgMapRef.addActiveClass(this.currentStore.svgmap_region);
                 },
                 dropPin(store) {
+                    console.log("droping pin for", store.name)
                     this.svgMapRef.showLocation(store.svgmap_region);
                 },
                 isMultiDay(promo) {
