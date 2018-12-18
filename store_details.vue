@@ -258,6 +258,7 @@
                 },
                 updateSVGMap(map) {
                     this.map = map;
+                    console.log("droping pin for", this.currentStore.name)
                     this.svgMapRef.showLocation(this.currentStore.svgmap_region);
                     this.svgMapRef.addActiveClass(this.currentStore.svgmap_region);
                 },
