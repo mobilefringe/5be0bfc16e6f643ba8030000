@@ -55,6 +55,9 @@
                 allStores() {
                     this.processedStores.map(function(store){
                         store.zoom = 1;
+                        if (!store.svgmap_region) {
+                          store.svgmap_region = store.id
+                        }
                     })
                     return this.processedStores;
                 },
