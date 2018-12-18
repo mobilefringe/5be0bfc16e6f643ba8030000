@@ -9,9 +9,7 @@
                         <div class="col-sm-12" v-if="currentPage">
                             <div class="page_body" v-html="currentPage.body"></div>
                         </div>
-                        <div class="col-sm-12">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14323.849844137574!2d-80.1152237!3d26.165352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c0885e20640af28!2sCoral+Ridge+Mall!5e0!3m2!1sen!2sca!4v1542824138490" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
+                        
                     </div>
     			</div>           
             </div>
