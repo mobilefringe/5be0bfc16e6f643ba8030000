@@ -219,7 +219,8 @@
                     return this.$refs.svgmap_ref;
                 },
                 allStores() {
-                    this.processedStores.map(function(store){
+                    var stores = this.processedStores
+                    stores.map(function(store){
                         store.zoom = 4;
                          if(!store.svgmap_region){
                             store.svgmap_region = store.id;
