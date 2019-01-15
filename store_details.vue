@@ -13,7 +13,9 @@
                                     <p class="store_details_name">{{ currentStore.name }}</p>
                                 </div>    
                             </div>
-                            <img v-else class="store_details_image center-block" :src="currentStore.store_front_url_abs" :alt="currentStore.name + ' Logo'" />
+                            <div v-else class="store_details_image">
+                                <img v-else class=" center-block" :src="currentStore.store_front_url_abs" :alt="currentStore.name + ' Logo'" />
+                            </div>
                             <div v-if="currentStore.phone">
                                 <h3 class="inside_page_title">Phone</h3>
                                 <a class="store_details_phone" :href="'tel:' + currentStore.phone">{{ currentStore.phone }}</a>    
