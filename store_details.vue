@@ -41,7 +41,7 @@
                                 
                             </ul>
                             <div class=" margin_30 store_details_desc" v-html="currentStore.rich_description"></div>
-                            <div v-if="this.currentStore.promotions">
+                            <div v-if="currentStore.promotions">
                                 <b-card no-body class="mb-1 inside_page_toggle">
                                     <b-card-header header-tag="header" class="p-1" role="tab">
                                         <b-btn block @click="togglePromos = !togglePromos" :aria-expanded="togglePromos ? 'true' : 'false'" aria-controls="togglePromotions">
