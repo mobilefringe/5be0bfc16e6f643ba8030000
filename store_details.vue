@@ -73,7 +73,7 @@
                                     </b-collapse>
                                 </b-card>
                             </div>
-                            <div v-if="this.currentStore.jobs">
+                            <div v-if="currentStore.jobs">
                                 <b-card no-body class="mb-1 inside_page_toggle">
                                     <b-card-header header-tag="header" class="p-1" role="tab">
                                         <b-btn block @click="toggleJobs = !toggleJobs" :aria-expanded="toggleJobs ? 'true' : 'false'" aria-controls="toggleJobs">
