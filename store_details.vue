@@ -14,7 +14,7 @@
                                 </div>    
                             </div>
                             <div v-else class="store_details_image">
-                                <img v-else class=" center-block" :src="currentStore.store_front_url_abs" :alt="currentStore.name + ' Logo'" />
+                                <img class="center-block" :src="currentStore.store_front_url_abs" :alt="currentStore.name + ' Logo'" />
                             </div>
                             <div v-if="currentStore.phone">
                                 <h3 class="inside_page_title">Phone</h3>
