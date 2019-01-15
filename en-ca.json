@@ -1,0 +1,40 @@
+{
+    "header": {
+        "newsletter-join": "Join Our Newsletter!",
+        "newsletter-subscribe": "Subscribe"
+    },
+    "menu": {
+        "store-directory": "Shopping",
+        "stores": "Stores",
+        "centre-map": "Center Map",
+        "events": "Events",
+        "promotions": "Promotions",
+        "leasing": "Leasing",
+        "photos": "Photos",
+        "contact": "Contact Us",
+        "find": "Find Us",
+        "about": "About Us",
+        "jobs": "Jobs",
+        "hours": "Shopping Hours",
+        "community": "Community"
+    },
+    "home": {
+        "stores-title": "Map & Store Directory"    
+    },
+    "hours": {
+        "hours-title": "Hours",
+        "hours-mon": "Monday - Friday",
+        "hours-sat": "Saturday",
+        "hours-sun": "Sunday",
+        "stores-title": "Stores"
+    },
+    "footer": {
+        "menu-link1": "Store Directory",
+        "menu-link2": "Events",
+        "menu-link3": "Promotions",
+        "menu-link4": "Leasing",
+        "menu-link5": "Contact Us",
+        "powered-by": "Powered By ",
+        "privacy-policy": "Privacy Policy"
+    }
+}
