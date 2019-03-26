@@ -49,7 +49,7 @@
                                     <b-card-body>
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <p>Sorry. There are no Promotions posted at this time. Please check back soon!</p>
+                                                <p>Sorry. There are no Sales posted at this time. Please check back soon!</p>
                                             </div>
                                         </div>
                                         <hr class="promo_separator" />
