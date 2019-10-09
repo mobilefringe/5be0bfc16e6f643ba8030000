@@ -920,7 +920,7 @@ footer {
   background-color: $primary;
   font-size: 1rem;
   line-height: 1rem;
-  color: #fff !important;
+  color: #000 !important;
 }
 .mapplic-tooltip-title{
     line-height: normal;
