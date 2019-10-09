@@ -7,10 +7,10 @@
                     <slick ref="slick" :options="slickOptions">
                         <div v-if="homeBanners" v-for="banner in homeBanners">
                             <a v-if="banner.url" :href="banner.url" class="">
-                                <div class="banner_image" v-bind:style="{ background: '#000 url(' + banner.image_url + ')' }"></div>
+                                <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                                 <!--<div class="banner_image" v-bind:style="{ backgroundImage: 'url(http://placehold.it/1920x500)' }"></div>-->
                             </a>
-                            <div v-else class="banner_image" v-bind:style="{ background: '#000 url(' + banner.image_url + ')' }"></div>
+                            <div v-else class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                             <!--<div v-else class="banner_image" v-bind:style="{ backgroundImage: 'url(http://placehold.it/1920x500)' }"></div>-->
                         </div>
                     </slick>
