@@ -51,6 +51,7 @@
             created(){
                 this.loadData().then(response => {
                     this.dataLoaded = true;  
+                    console.log(this.featureItems)
                 });
             },
             computed: {
@@ -79,7 +80,7 @@
                 },
                 featureItems() {
                     return _.slice(this.$store.state.feature_items, 0, 3);
-                    console.log(this.featureItems)
+                    
                 }
             },
             methods: {
