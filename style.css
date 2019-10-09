@@ -1238,7 +1238,7 @@ footer {
   line-height: 1.875rem;
   .today {
     font-family: Avenir-Medium;
-    color: $primary;
+    
   }
   .hours_list_day {
     padding-right: 50px;
