@@ -1118,7 +1118,7 @@ footer {
   background: $primary;
   font-size: 1.375rem;
   text-transform: uppercase;
-  color: #FFF;
+  color: #000;
 }
 
 .store_list_name {
