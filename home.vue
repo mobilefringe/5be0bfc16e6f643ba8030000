@@ -18,8 +18,8 @@
                 <div class="main_container">
                     <div v-if="featureItems" class="row">
                         <div v-for="item in featureItems" class="col-sm-4 feature_item">
-                            <a v-if="item.url" :href="item.url"><img :src="item.image_url" alt=""  /></a>
-                            <img v-else :src="item.image_url" alt="" />
+                            <a v-if="item.url" :href="item.url"><img :src="item.image_url" :alt="item.description"  /></a>
+                            <img v-else :src="item.image_url" :alt="item.description" />
                             <!--<img src="//codecloud.cdn.speedyrails.net/sites/5af1d01b6e6f64457d110000/image/png/1518461604000/Stores Directory.png" />-->
                         </div>
                     </div>
