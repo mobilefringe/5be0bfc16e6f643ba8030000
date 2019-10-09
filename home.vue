@@ -79,7 +79,7 @@
                 },
                 featureItems() {
                     return _.slice(this.$store.state.feature_items, 0, 3);
-                    console.log(thisfeatureItems)
+                    console.log(this.featureItems)
                 }
             },
             methods: {
