@@ -922,7 +922,7 @@ footer {
   line-height: 1rem;
   color: #000 !important;
   &:hover {
-      color: #fff;
+      color: #fff !important;
   }
 }
 .mapplic-tooltip-title{
