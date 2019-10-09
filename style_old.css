@@ -44,9 +44,6 @@ body {
 [v-cloak] {
     display: none;
 }
-.v-select .spinner {
-    font-size: 1rem !important;
-}
 a {
     color: inherit;
     transition: color 0.3s ease;
