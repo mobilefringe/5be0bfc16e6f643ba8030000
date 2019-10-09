@@ -686,7 +686,7 @@ footer {
   margin-bottom: 40px;
   height: 148px;
 //   background-image: url(//codecloud.cdn.speedyrails.net/sites/5af1d01b6e6f64457d110000/image/png/1517944999000/capri_banner.png);
-  background-color:$primary;
+  background-color: #000;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
