@@ -894,7 +894,7 @@ footer {
         transition: all 0.3s ease;
         &:hover {
             background: $primary;
-            color: #FFF;
+            color: #000;
             cursor: pointer;
         }
     }
