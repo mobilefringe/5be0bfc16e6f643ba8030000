@@ -818,7 +818,7 @@ footer {
   font-style: italic;
   font-size: 1.375rem;
   line-height: 1.375rem;
-  color: $primary;
+  color: #000;
 }
 
 .inside_page_toggle {
