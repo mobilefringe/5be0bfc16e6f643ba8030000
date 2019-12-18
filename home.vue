@@ -18,8 +18,8 @@
                 <div class="main_container">
                     <div v-if="featureItems" class="row">
                         <div v-for="item in featureItems" class="col-sm-4 feature_item">
-                            <a v-if="item.url" :href="item.url"><img :src="item.image_url" :alt="item.description"  /></a>
-                            <img v-else :src="item.image_url" :alt="item.description" />
+                            <a v-if="item.url" :href="item.url"><img :src="item.image_url" :alt="item.name" /></a>
+                            <img v-else :src="item.image_url" :alt="item.name" />
                             <!--<img src="//codecloud.cdn.speedyrails.net/sites/5af1d01b6e6f64457d110000/image/png/1518461604000/Stores Directory.png" />-->
                         </div>
                     </div>
@@ -29,12 +29,18 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "vue!vue-slick"], function (Vue, Vuex, slick) {
+    define(["Vue", "vuex", "vue-meta", "vue!vue-slick"], function (Vue, Vuex, Meta, slick) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
                     dataLoaded: false,
+                    meta: {
+                        meta_title: "",
+                        meta_description: "",
+                        meta_keywords: "",
+                        meta_image: ""
+                    },
                     slickOptions: {
                         arrows: false,
                         autoplay: true,
@@ -50,14 +56,15 @@
             },
             created(){
                 this.loadData().then(response => {
+                    this.meta = this.findMetaDataByPath(this.$route.path);
                     this.dataLoaded = true;  
-                    
                 });
             },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
+                    'findMetaDataByPath',
                     'getPropertyHours'
                 ]),
                 homeBanners() {
@@ -80,7 +87,6 @@
                 },
                 featureItems() {
                     return _.slice(this.$store.state.feature_items, 0, 3);
-                    
                 }
             },
             methods: {
@@ -91,6 +97,18 @@
                     } catch(e) {
                         console.log("Error loading data: " + e.message);    
                     }
+                }
+            },
+            metaInfo () {
+                return {
+                    title: this.meta.meta_title,
+                    meta: [
+                        { name: 'description', vmid: 'description', content: this.meta.meta_description },
+                        { name: 'keywords',  vmid: 'keywords', content: this.meta.meta_keywords },
+                        { property: 'og:title', vmid: 'og:title', content: this.meta.meta_title },
+                        { property: 'og:description', vmid: 'og:description', content: this.meta.meta_description },
+                        { property: 'og:image', vmid: 'og:image', content: this.meta.meta_image }
+                    ]
                 }
             }
         })
