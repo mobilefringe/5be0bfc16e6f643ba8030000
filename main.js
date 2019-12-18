@@ -53,10 +53,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
-    
-    // const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-    // observer.observe();
-    
+
     /* initialize router */
     const router = new VueRouter({
         mode: 'history',
