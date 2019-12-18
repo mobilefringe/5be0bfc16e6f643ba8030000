@@ -46,7 +46,10 @@ require.config({
 
 require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-sync', 'datastore', 'vue-i18n', 'locales', 'moment', 'vue-meta', 'vue!loading.vue', 'vue!messages.vue', 'vue!header.vue', 'vue!footer.vue', 'vue!inside_header.vue', "json!site.json",'vue!loader.vue'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, VuexRouterSync, store, VueI18n, messages, moment, Meta, LoadingComponent, MessagesComponent, HeaderComponent, FooterComponent, insideHeaderComponent, Site, Loader) {
 
-    Vue.use(Meta);
+    Vue.use(Meta, {
+        keyName: 'metaInfo', // the component option name that vue-meta looks for meta info on.
+        tagIDKeyName: 'vmid' // the property name that vue-meta uses to determine whether to overwrite or append a tag
+    });
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
