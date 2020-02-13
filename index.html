@@ -35,7 +35,7 @@
     <body>
         <div id="app" v-cloak>
             <loading-spinner v-if="!dataLoaded"></loading-spinner>
-            <header-component :menu_items="menu_items" :social_media="social_media" v-if="dataLoaded" role="banner"></header-component>
+            <header-component :menu_items="menu_items" :social_media="social_media" v-if="dataLoaded"></header-component>
             <main>
             <router-view v-if="dataLoaded" class="page-content"></router-view>
             </main>
