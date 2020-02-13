@@ -1,0 +1,99 @@
+<template>
+    <div> <!-- without an outer container div this component template will not render -->
+        <loading-spinner v-if="!dataLoaded"></loading-spinner>
+        <transition name="fade">
+            <div v-if="dataLoaded" v-cloak>
+                <inside-header-component pageName="Center Map"></inside-header-component>
+                <div class="main_container margin_30">
+                    <div class="details_row">
+                        <div class="details_col_3">
+                            <div class="hidden_phone">
+                                <h3 class="inside_page_title">Find Store</h3>
+                                <div class="store_list_container hidden-mobile" v-if="allStores" tab-index=0>
+                                    <p class="store_name" v-for="store in allStores" v-on:click="dropPin(store)">{{store.name}}</p>
+                                </div>
+                            </div>
+                            <div class="visible_phone">
+                                <v-select 
+                                    :options="allStores" 
+                                    :placeholder="'Select A Store'" 
+                                    :searchable="false" 
+                                    :label="'name'" 
+                                    :on-change="dropPin"
+                                ></v-select>
+                            </div>
+                        </div>
+                        <div class="details_col_9">
+                            <mapplic-map ref="mapplic_ref" :height="700" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details" :svgHeight="2500" :svgWidth="2500"></mapplic-map>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </transition>
+    </div>
+</template>
+<script>
+    define(["Vue", "vuex", "vue-select", "vue!mapplic-svg"], function(Vue, Vuex, VueSelect, MapplicComponent) {
+        Vue.component('v-select', VueSelect.VueSelect);
+        return Vue.component("stores-component", {
+            template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    dataLoaded: false,
+                }
+            },
+            created (){
+                this.loadData().then(response => {
+                    this.dataLoaded = true;
+                });
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'processedStores'
+                ]),
+                allStores() {
+                    this.processedStores.map(function(store){
+                        store.zoom = 1;
+                        if (!store.svgmap_region) {
+                          store.svgmap_region = store.id
+                        }
+                    })
+                    return this.processedStores;
+                },
+                getSVGurl() {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                },
+                svgMapRef() {
+                    return this.$refs.mapplic_ref;
+                },
+                floorList () {
+                    var floor_list = [];
+                    
+                    var floor_1 = {};
+                    floor_1.id = "first-floor";
+                    floor_1.title = "Level One";
+                    floor_1.map = this.getSVGurl;
+                    // floor_1.minimap = this.miniOne;
+                    floor_1.z_index = null;
+                    floor_1.show = true;
+                    floor_list.push(floor_1);
+                    return floor_list;
+                }
+            },
+            methods: {
+                loadData: async function () {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData", "repos")]);
+                        return results;
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
+                dropPin(store) {
+                    this.$refs.mapplic_ref.showLocation(store.svgmap_region);
+                }
+            }
+        });
+    });
+</script>
