@@ -37,6 +37,7 @@
             <loading-spinner v-if="!dataLoaded"></loading-spinner>
             <header-component :menu_items="menu_items" :social_media="social_media" v-if="dataLoaded" role="banner"></header-component>
             <main>
+            <h1 class="visuallyhidden">Coral Ridge</h1>
             <router-view v-if="dataLoaded" class="page-content"></router-view>
             </main>
             <footer-component :social_media="social_media" v-if="dataLoaded"></footer-component>
