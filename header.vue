@@ -1,6 +1,6 @@
 <template>
     <header id="header" :class="{'smallerHeader' : smallerHeader}">
-        <section  class="header main_container" role="banner">
+        <section  class="header main_container" >
             <div class="row logo_container">
                 <div class="col-md-3">
                     <div class="site_logo center-block">
