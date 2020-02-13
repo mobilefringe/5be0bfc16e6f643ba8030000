@@ -59,13 +59,13 @@
                                                         <!-- EVENTS -->
                             <b-card no-body class="mb-1 inside_page_toggle">
                                 <b-card-header header-tag="header" class="p-1">
-                                    <b-btn block @click="toggleEvents = !toggleEvents" :aria-expanded="toggleEvents ? 'true' : 'false'" aria-controls="toggleEvents">
+                                    <b-btn block @click="toggleEvents = !toggleEvents" :aria-expanded="toggleEvents ? 'true' : 'false'">
                                         Events
                                         <i v-if="toggleEvents"  class="fa fa-minus f"></i>
                                         <i v-else  class="fa fa-plus"></i>
                                     </b-btn>
                                 </b-card-header>
-                                <b-collapse v-if="eventList.length >= 1" v-for="event in eventList" v-model="toggleEvents" role="tabpanel" id="toggleEvents" class="accordion_body">
+                                <b-collapse v-if="eventList.length >= 1" v-for="event in eventList" v-model="toggleEvents" role="tabpanel" :id="event.name" class="accordion_body">
                                     <b-card-body>
                                         <div class="row">
                                             <div class="col-md-5" v-if="">
