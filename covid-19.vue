@@ -97,6 +97,7 @@
 <style>
     .covid-background {
         height: 300px;
+        margin-bottom: 60px;
     }
     
 </style>
