@@ -108,7 +108,7 @@
     .page_body p {
         margin-bottom: 30px;
     }
-    .page_body strong {
+    .page_body p strong {
         margin: 30px 0;
     }
     .details_row {
