@@ -108,6 +108,9 @@
     .page_body p {
         margin-bottom: 30px;
     }
+    .page_body strong {
+        margin: 30px 0;
+    }
     .details_row {
         font-family: 'Maven Pro', sans-serif;
     }
