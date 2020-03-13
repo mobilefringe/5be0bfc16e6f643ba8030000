@@ -111,6 +111,7 @@
     }
     .covid-background h1 {
         color: #fff;
+        font-weight: light;
         
        
     }
