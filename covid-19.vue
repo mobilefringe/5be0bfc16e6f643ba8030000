@@ -111,12 +111,12 @@
         margin-bottom: 30px;
     }
     .page_body h2 {
-        padding: 30px 0 60px;
+        padding: unset;
         background: unset;
         font-family: 'Maven Pro', sans-serif;
         color: unset;
         font-size: 24px;
-        margin-bottom: 0;
+        margin: 30px 0 60px;
     }
     h3 {
         font-size: 26px;
