@@ -109,7 +109,11 @@
         margin-bottom: 30px;
     }
     .page_body h2 {
-        margin: 30px 0;
+        padding: 30px 0;
+        background: unset;
+        font-family: 'Maven Pro', sans-serif;
+        color: unset;
+        font-size: 24px;
     }
     .details_row {
         font-family: 'Maven Pro', sans-serif;
