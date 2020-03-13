@@ -107,9 +107,9 @@
         height: 300px;
         margin-bottom: 60px;
     }
-    .covid-background span {
-        display: block;
-    }
+    /*.covid-background span {*/
+    /*    display: block;*/
+    /*}*/
     h1 {
         font-size: 26px;
         margin-bottom: 30px;
