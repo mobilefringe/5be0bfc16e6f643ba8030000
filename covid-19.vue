@@ -114,6 +114,11 @@
         font-family: 'Maven Pro', sans-serif;
         color: unset;
         font-size: 24px;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 26px;
+        text-transform: uppercase;
     }
     .details_row {
         font-family: 'Maven Pro', sans-serif;
