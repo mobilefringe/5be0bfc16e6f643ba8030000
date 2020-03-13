@@ -130,6 +130,7 @@
     
     ul {
       list-style-type: none;
+      padding-left: 0;
     }
     ul > li {
       text-indent: -5px;
