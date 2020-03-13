@@ -6,19 +6,13 @@
                 <!--<inside-header-component :pageName="currentPage.title"></inside-header-component>-->
                 
                 <div class="inside_header_background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-                    <div class="main_container">
-                        <div class="page_container">
-                            <h2>{{currentPage.title}} 
-                                <span>Coronavirus Information and Resources </span>
-                            </h2>
-                            
-                        </div>
-                    </div>
+                    
                 </div>
                 
                 <div class="main_container mobile_padding margin_30">
                     <div class="details_row">
                         <div class="details_col_12">
+                            <h1>{{currentPage.title}} </h1>
                             <div class="page_body" v-html="currentPage.body"></div>
                         </div>
                     </div>
