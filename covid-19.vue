@@ -9,7 +9,7 @@
                 <div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
                     <div class="main_container center_text">
                         <div class="page_container">
-                            <h1>{{currentPage.title}} <span>Coronavirus information & Resources</span></h1>
+                            <h1><span>{{currentPage.title}} </span>Coronavirus information & Resources</h1>
                             
                         </div>
                     </div>
@@ -111,13 +111,13 @@
     }
     .covid-background h1 {
         color: #fff;
-        font-size: 28px;
+        
        
     }
     .covid-background span {
         display: block;
-        margin-top: 24px;
-
+        margin-bottom: 24px;
+        font-size: 28px;
     }
     h1 {
         font-size: 26px;
