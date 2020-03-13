@@ -3,17 +3,17 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-                    
-                </div>
                 <!--<div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">-->
-                <!--    <div class="main_container">-->
-                <!--        <div class="page_container">-->
-                <!--            <h1>{{currentPage.title}} <span>Coronavirus information & Resources</span></h1>-->
-                            
-                <!--        </div>-->
-                <!--    </div>-->
+                    
                 <!--</div>-->
+                <div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+                    <div class="main_container">
+                        <div class="page_container">
+                            <h1>{{currentPage.title}} <span>Coronavirus information & Resources</span></h1>
+                            
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="main_container mobile_padding margin_30">
                     <div class="details_row">
@@ -107,9 +107,9 @@
         height: 300px;
         margin-bottom: 60px;
     }
-    /*.covid-background span {*/
-    /*    display: block;*/
-    /*}*/
+    .covid-background span {
+        display: block;
+    }
     h1 {
         font-size: 26px;
         margin-bottom: 30px;
