@@ -1,5 +1,5 @@
 <template>
-    <div> <!-- without an outer container div this component template will not render -->
+    <div class="covid-page"> <!-- without an outer container div this component template will not render -->
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
@@ -16,7 +16,7 @@
                 </div>
                 
                 <div class="main_container mobile_padding margin_30">
-                    <div class="details_row">
+                    <div class="">
                         <div class="details_col_12">
                             <h1>{{currentPage.title}} </h1>
                             <div class="page_body" v-html="currentPage.body"></div>
@@ -138,7 +138,7 @@
         font-size: 26px;
         text-transform: uppercase;
     }
-    .details_row {
+    .covid-page {
         font-family: 'Maven Pro', sans-serif;
     }
 
