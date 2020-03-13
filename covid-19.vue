@@ -115,7 +115,7 @@
     }
     .covid-background span {
         display: block;
-        font-size: 26px;
+
     }
     h1 {
         font-size: 26px;
