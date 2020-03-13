@@ -102,6 +102,7 @@
     h1 {
         font-size: 26px;
         text-transform: uppercase;
+        font-family: 'Maven Pro', sans-serif;
     }
     .page_body p,
     .page_body strong {
