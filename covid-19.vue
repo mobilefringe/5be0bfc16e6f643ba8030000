@@ -118,6 +118,7 @@
         display: block;
         margin-bottom: 24px;
         font-size: 28px;
+        font-weight: bold;
     }
     h1 {
         font-size: 26px;
