@@ -219,6 +219,20 @@ define([], function () {
             ]
         },
         {
+            path: '/covid-19',
+            component: view('covid-19'),
+            children: [
+                {
+                    path: '',
+                    component: view('covid-19'),
+                    meta: {
+                        pageName: 'COVID-19 Update',
+                    },
+                    name: 'covid-19'
+                }
+            ]
+        },
+        {
             
             path: '/404',
             name: '404',
@@ -227,7 +241,7 @@ define([], function () {
         {
             path: '*',
             redirect: '/404'
-        }
+        },
     ]
 
     /*
