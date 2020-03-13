@@ -101,6 +101,13 @@
     }
     h1 {
         font-size: 26px;
+        text-transform: uppercase;
+    }
+    .page_body p {
+        margin: 0;
+    }
+    .page_body strong {
+        margin: 30px 0;
     }
     
 </style>
