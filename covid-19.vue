@@ -106,12 +106,16 @@
     .covid-background {
         height: 300px;
         margin-bottom: 60px;
+        display: flex;
+        align-items: center;
     }
     .covid-background h1 {
         color: #fff;
+        font-size: 28px;
     }
     .covid-background span {
         display: block;
+        font-size: 26px;
     }
     h1 {
         font-size: 26px;
