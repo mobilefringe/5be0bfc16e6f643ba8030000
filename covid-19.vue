@@ -103,8 +103,6 @@
 </script>
 
 <style>
-    strong {
-        font-weight: bold;
-    }
+
     
 </style>
