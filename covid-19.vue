@@ -128,18 +128,18 @@
         
     }
     
-    ul {
+    .main_container ul {
       list-style-type: none;
       padding-left: 0;
     }
-    ul > li {
+    .main_container ul > li {
       text-indent: -5px;
     }
-    ul > li:before {
+    .main_container ul > li:before {
       content: "-";
       text-indent: -5px;
     }
-    ul > li a {
+    .main_container ul > li a {
         margin-left: 5px;
     }
     
