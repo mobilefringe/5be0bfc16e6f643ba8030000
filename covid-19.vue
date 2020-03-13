@@ -99,5 +99,8 @@
         height: 300px;
         margin-bottom: 60px;
     }
+    h1 {
+        font-size: 26px;
+    }
     
 </style>
