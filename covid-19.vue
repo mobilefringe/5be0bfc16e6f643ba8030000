@@ -117,7 +117,6 @@
         font-size: 26px;
         margin-bottom: 30px;
         text-transform: uppercase;
-        font-family: 'Maven Pro', sans-serif;
         
     }
     .page_body p,
@@ -128,7 +127,6 @@
     .page_body h2 {
         padding: unset;
         background: unset;
-        font-family: 'Maven Pro', sans-serif;
         color: unset;
         font-size: 24px;
         margin: 60px 0;
