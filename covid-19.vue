@@ -112,6 +112,7 @@
     .covid-background h1 {
         color: #fff;
         font-size: 28px;
+        margin-bottom: 24px;
     }
     .covid-background span {
         display: block;
