@@ -143,7 +143,7 @@
         text-transform: uppercase;
     }
     .covid-page {
-        font-family: 'Maven Pro', sans-serif;
+        font-family: 'Maven Pro', sans-serif !important;
     }
     .center_text {
         display: flex;
