@@ -3,9 +3,7 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <!--<inside-header-component :pageName="currentPage.title"></inside-header-component>-->
-                
-                <div class="inside_header_background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+                <div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
                     
                 </div>
                 
@@ -97,6 +95,8 @@
 </script>
 
 <style>
-
+    .covid-background {
+        height: 300px;
+    }
     
 </style>
