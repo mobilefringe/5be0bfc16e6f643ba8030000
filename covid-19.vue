@@ -128,18 +128,18 @@
         
     }
     
-    .main_container ul {
+    .page_body ul {
       list-style-type: none;
       padding-left: 0;
     }
-    .main_container ul > li {
+    .page_body ul > li {
       text-indent: -5px;
     }
-    .main_container ul > li:before {
+    .page_body ul > li:before {
       content: "-";
       text-indent: -5px;
     }
-    .main_container ul > li a {
+    .page_body ul > li a {
         margin-left: 5px;
     }
     
