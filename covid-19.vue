@@ -105,7 +105,9 @@
         text-transform: uppercase;
         font-family: 'Maven Pro', sans-serif;
     }
-    .page_body p {
+    .page_body p,
+    h3,
+    ul{
         margin-bottom: 30px;
     }
     .page_body h2 {
