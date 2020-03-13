@@ -117,6 +117,7 @@
         color: unset;
         font-size: 24px;
         margin: 60px 0;
+        font-weight: bold;
     }
     h3 {
         font-size: 26px;
