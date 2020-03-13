@@ -107,6 +107,9 @@
         height: 300px;
         margin-bottom: 60px;
     }
+    .covid-background h1 {
+        color: #fff;
+    }
     .covid-background span {
         display: block;
     }
