@@ -101,6 +101,7 @@
     }
     h1 {
         font-size: 26px;
+        margin-bottom: 30px;
         text-transform: uppercase;
         font-family: 'Maven Pro', sans-serif;
     }
