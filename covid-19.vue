@@ -127,6 +127,18 @@
         text-transform: uppercase;
         
     }
+    
+    ul {
+      list-style-type: none;
+    }
+    ul > li {
+      text-indent: -5px;
+    }
+    ul > li:before {
+      content: "-";
+      text-indent: -5px;
+    }
+    
     .page_body p,
     h3,
     ul{
@@ -139,7 +151,7 @@
         font-size: 24px;
         margin: 60px 0;
         font-weight: bold;
-        font-family: 'Maven Pro', sans-serif 
+        font-family: 'Maven Pro', sans-serif;
     }
     h3 {
         font-size: 26px;
