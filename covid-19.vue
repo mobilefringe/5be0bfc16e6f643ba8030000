@@ -4,7 +4,8 @@
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
 
-        		<div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }"></div>
+        		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+        		</div>
         		
         		
                 <!--<div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">-->
