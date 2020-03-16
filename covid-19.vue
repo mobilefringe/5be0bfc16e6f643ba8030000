@@ -3,7 +3,7 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+                <div class="inside_page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
         		</div>
                 <div class="site_container mobile_padding margin_30">
                     <div class="">
@@ -80,7 +80,7 @@
 </script>
 
 <style>
-    .page_header .header_content {
+    .inside_page_header .header_content {
         max-width: unset;
     }
     .covid-background {
