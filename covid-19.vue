@@ -3,11 +3,22 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <div class="inside_page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-        		</div>
-                <div class="site_container mobile_padding margin_30">
+                <!--<div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">-->
+                    
+                <!--</div>-->
+                <div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+                    <div class="main_container center_text">
+                        <div class="page_container">
+                            <h1><span>{{currentPage.title}} </span>Coronavirus information & Resources</h1>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="main_container mobile_padding margin_30">
                     <div class="">
                         <div class="details_col_12">
+                            <h1>{{currentPage.title}} </h1>
                             <div class="page_body" v-html="currentPage.body"></div>
                         </div>
                     </div>
@@ -25,7 +36,6 @@
             data: function data() {
                 return {
                     dataLoaded: false,
-                    pageBanner: null,
                     currentPage: null,
                     sideBanner: null
                 }
@@ -59,13 +69,26 @@
                     
                     this.loadData().then(response => {
                         var temp_repo = this.findRepoByName('COVID-19 Banner');
-                        if (temp_repo && temp_repo.images) {
+                        if(temp_repo) {
                             this.pageBanner = temp_repo.images[0];
-                        } else {
+                        }
+                        else {
                             this.pageBanner = {};
                             this.pageBanner.image_url = "";
                         }
                     });
+                    // this.loadData().then(response => {
+                    //     var temp_repo1 = this.findRepoByName('Sales & Events Side Banner');
+                    //     if(temp_repo1 && temp_repo1.images) {
+                    //         this.sideBanner = temp_repo1.images[0];
+                    //     } else {
+                    //         this.sideBanner = {
+                    //             "image_url": ""
+                    //         }
+                    //     } 
+                    // });
+                    
+               
                 },
                 loadData: async function () {
                     try {
@@ -80,9 +103,6 @@
 </script>
 
 <style>
-    .inside_page_header .header_content {
-        max-width: unset;
-    }
     .covid-background {
         height: 300px;
         margin-bottom: 60px;
@@ -105,27 +125,28 @@
         font-size: 26px;
         margin-bottom: 30px;
         text-transform: uppercase;
-        font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;;
         
     }
     
-    /*.page_body ul {*/
-    /*  list-style-type: none;*/
-    /*  padding-left: 0;*/
-    /*}*/
-    /*.page_body ul > li {*/
-    /*  text-indent: -5px;*/
-    /*}*/
-    /*.page_body ul > li:before {*/
-    /*  content: "-";*/
-    /*  text-indent: -5px;*/
-    /*}*/
-    /*.page_body ul > li a {*/
-    /*    margin-left: 5px;*/
-    /*}*/
+    .page_body ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .page_body ul > li {
+      text-indent: -5px;
+    }
+    .page_body ul > li:before {
+      content: "-";
+      text-indent: -5px;
+    }
+    .page_body ul > li a {
+        margin-left: 5px;
+    }
     
-    .page_body p, h3, ul{
-        margin-bottom: 1rem;
+    .page_body p,
+    h3,
+    ul{
+        margin-bottom: 30px;
     }
     .page_body h2 {
         padding: unset;
@@ -134,21 +155,19 @@
         font-size: 24px;
         margin: 60px 0;
         font-weight: bold;
-
+        font-family: 'Maven Pro', sans-serif;
     }
     h3 {
         font-size: 26px;
         text-transform: uppercase;
     }
-
+    .covid-page {
+        font-family: 'Maven Pro', sans-serif !important;
+    }
     .center_text {
         display: flex;
         align-items: center
     }
-    @media(max-width: 1024px){
-        h1 {
-            font-size: 20px;
-        }   
-    }
+
     
 </style>
