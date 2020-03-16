@@ -41,7 +41,7 @@
                     currentPage: null,
                     sideBanner: null,
                     
-                    pageBanner
+                    pageBanner: null
                 }
             },
             created() {
