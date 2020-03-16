@@ -3,24 +3,11 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-
-        		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+                <div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
         		</div>
-        		
-        		
-                <!--<div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">-->
-                <!--    <div class="main_container center_text">-->
-                <!--        <div class="page_container">-->
-                <!--            <h1><span>{{currentPage.title}} </span>Coronavirus information & Resources</h1>-->
-                            
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
-                
-                <div class="main_container mobile_padding margin_30">
+                <div class="site_container mobile_padding margin_30">
                     <div class="">
                         <div class="details_col_12">
-                            <h1>{{currentPage.title}} </h1>
                             <div class="page_body" v-html="currentPage.body"></div>
                         </div>
                     </div>
@@ -38,10 +25,9 @@
             data: function data() {
                 return {
                     dataLoaded: false,
+                    pageBanner: null,
                     currentPage: null,
-                    sideBanner: null,
-                    
-                    pageBanner: null
+                    sideBanner: null
                 }
             },
             created() {
@@ -63,7 +49,7 @@
                 updateCurrentPage(id) {
                     var _this = this;
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
-                    this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/coralridge-covid-19-update.json" }).then(function (response) {
+                    this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/southland-covid-19-update.json" }).then(function (response) {
                         _this.currentPage = response.data;
                         _this.dataLoaded = true;
                     }, function (error) {
@@ -73,15 +59,13 @@
                     
                     this.loadData().then(response => {
                         var temp_repo = this.findRepoByName('COVID-19 Banner');
-                        if(temp_repo) {
+                        if (temp_repo && temp_repo.images) {
                             this.pageBanner = temp_repo.images[0];
-                        }
-                        else {
+                        } else {
                             this.pageBanner = {};
                             this.pageBanner.image_url = "";
                         }
                     });
-               
                 },
                 loadData: async function () {
                     try {
