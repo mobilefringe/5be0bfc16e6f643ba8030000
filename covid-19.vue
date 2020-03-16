@@ -39,7 +39,9 @@
                 return {
                     dataLoaded: false,
                     currentPage: null,
-                    sideBanner: null
+                    sideBanner: null,
+                    
+                    pageBanner
                 }
             },
             created() {
