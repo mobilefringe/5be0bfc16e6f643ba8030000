@@ -62,7 +62,7 @@
                     return this.processedStores;
                 },
                 getSVGurl() {
-                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                    return "https://www.assets.mallmaverick.com" + this.property.svgmap_url;
                 },
                 svgMapRef() {
                     return this.$refs.mapplic_ref;
