@@ -15,7 +15,8 @@ require.config({
         'text': 'https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text.min',
         'json': 'https://unpkg.com/requirejs-plugins-current@1.0.3/src/json',
         'js-cookie': 'https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min',
-        'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
+        //'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
+        'vue-head': 'https://cdn.rawgit.com/ktquez/vue-head/master/vue-head',
         'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
         'datastore_mutation_types': 'https://preview-mmvue.codecloudapp.com/datastore_mutation_types',
         'datastore_getters': 'https://preview-mmvue.codecloudapp.com/datastore_getters',
@@ -44,15 +45,12 @@ require.config({
     }
 });
 
-require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-sync', 'datastore', 'vue-i18n', 'locales', 'moment', 'vue-meta', 'vue!loading.vue', 'vue!messages.vue', 'vue!header.vue', 'vue!footer.vue', 'vue!inside_header.vue', "json!site.json",'vue!loader.vue'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, VuexRouterSync, store, VueI18n, messages, moment, Meta, LoadingComponent, MessagesComponent, HeaderComponent, FooterComponent, insideHeaderComponent, Site, Loader) {
+require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-sync', 'datastore', 'vue-i18n', 'locales', 'moment', 'vue-head', 'vue!loading.vue', 'vue!messages.vue', 'vue!header.vue', 'vue!footer.vue', 'vue!inside_header.vue', "json!site.json",'vue!loader.vue'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, VuexRouterSync, store, VueI18n, messages, moment, VueHead, LoadingComponent, MessagesComponent, HeaderComponent, FooterComponent, insideHeaderComponent, Site, Loader) {
 
-    Vue.use(Meta, {
-        keyName: 'metaInfo', // the component option name that vue-meta looks for meta info on.
-        tagIDKeyName: 'vmid' // the property name that vue-meta uses to determine whether to overwrite or append a tag
-    });
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
+    Vue.use(VueHead);
 
     /* initialize router */
     const router = new VueRouter({
