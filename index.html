@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" data-vue-meta-server-rendered>
     <head>
-        <title>{{meta_title}}</title>
+        <title>{{meta_title}}</title>       
+        <meta property="og:title" content="{{meta_title}}">
+        <meta property="og:description" content="{{meta_description}}">
+        <meta property="og:image" content="{{meta_image}}">
+        <meta name="description" content="{{meta_description}}">
+        <meta name="keywords" content="{{meta_keywords}}">
         
         <meta name="twitter:card" content="summary">
         <meta property="og:image:width" content="400">
@@ -33,6 +38,7 @@
       </script>
     </head>
     <body>
+        {%raw-%}
         <div id="app" v-cloak>
             <loading-spinner v-if="!dataLoaded"></loading-spinner>
             <header-component :menu_items="menu_items" :social_media="social_media" v-if="dataLoaded" role="banner"></header-component>
@@ -42,6 +48,7 @@
             </main>
             <footer-component :social_media="social_media" v-if="dataLoaded"></footer-component>
         </div>
+        {%endraw-%}
         <script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
         <script src="https://unpkg.com/es6-shim@0.35.3/es6-shim.min.js"></script>
         <script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
